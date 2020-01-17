@@ -11,7 +11,7 @@ let portals_markers = [
 
 for (let i = 0; i < portals_markers.length; i++) {
   marker = L.marker(portals_markers[i].loc, {
-    icon: marker_icon_location
+    icon: marker_icon_portal
   }).addTo(portals_lg);
   marker.bindPopup;
   portals_markers[i].pop +

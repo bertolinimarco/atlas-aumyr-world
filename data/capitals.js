@@ -11,9 +11,9 @@ let capitals_markers = [
 ];
 
 for (let i = 0; i < capitals_markers.length; i++) {
-  marker = L.marker(capitals_markers[i].loc, { icon: marker_icon_capital }).addTo(
-    capitals_lg
-  );
+  marker = L.marker(capitals_markers[i].loc, {
+    icon: marker_icon_capital
+  }).addTo(capitals_lg);
   marker.bindPopup(
     capitals_markers[i].pop +
       '<hr><a href="' +
@@ -22,5 +22,8 @@ for (let i = 0; i < capitals_markers.length; i++) {
       capitals_markers[i].label +
       "</a>"
   );
-  marker.bindTooltip(capitals_markers[i].label);
+  marker.bindTooltip(capitals_markers[i].label, {
+    // permanent: true,
+    // direction: "bottom"
+  });
 }

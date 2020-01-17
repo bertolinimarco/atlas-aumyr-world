@@ -11,7 +11,7 @@ let ruins_markers = [
 
 for (let i = 0; i < ruins_markers.length; i++) {
   marker = L.marker(ruins_markers[i].loc, {
-    icon: marker_icon_village
+    icon: marker_icon_ruin
   }).addTo(ruins_lg);
   marker.bindPopup;
   ruins_markers[i].pop +

@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Aumyr Atlas</title>
-</head>
-<body>
-    Choose
 
-    <a href="/it/aumyr.html">aumyr</a>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Asul:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="select-page">
+    <style>
+      .section {
+        padding: 30px 0;
+      }
+      .select-page {
+        background: #f1f1f1;
+      }
+      .section-logo {
+        margin: 5% 0;
+      }
+      .section-logo img {
+        max-height: 130px;
+        max-width: 100%;
+        display: block;
+        margin: 3rem auto 1.5rem;
+      }
+    </style>
+
+    <div class="section section-logo">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="https://www.aumyr.world/assets/img/logo-aumyr-world.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <select id="js-selectLanguage">
+              <option value="it" selected>Italiano</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  bla
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  eius?
+                </p>
+
+                <a
+                  href="/it/aumyr.html"
+                  class="stretched-link js-linkLanguage"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // select language
+      $("#js-selectLanguage").change(function() {
+        $(".js-linkLanguage").attr("href", "/" + $(this).val() + "/aumyr.html");
+      });
+    </script>
+  </body>
 </html>

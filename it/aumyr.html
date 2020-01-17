@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
     <title>Aumyr - Aumyr Atlas</title>
 
@@ -9,8 +9,19 @@
     <!-- <link rel="shortcut icon" type="favicon.ico" href="favicon.ico" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
 
+    <!-- Google Fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Asul:400,700&display=swap"
+      rel="stylesheet"
+    /> -->
+
     <!-- CSS: Leaflet -->
     <link rel="stylesheet" href="/vendors/leaflet/leaflet.css" />
+    <!-- Leaflet Drawing Plugin: https://github.com/codeofsumit/leaflet.pm -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.pm@latest/dist/leaflet.pm.css"
+    />
 
     <!-- Leaflet Plugins: Fullscreen -->
     <link
@@ -23,6 +34,12 @@
 
     <!-- CSS: Globals -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- <style>
+      * {
+        font-family: "Asul", sans-serif;
+      }
+    </style> -->
   </head>
   <body>
     <div id="map"></div>
@@ -32,9 +49,10 @@
 
     <!-- Leaflet -->
     <script src="/vendors/leaflet/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.pm@latest/dist/leaflet.pm.min.js"></script>
 
-    <!-- Leaflet Plugins: Location Share -->
-    <script src="/vendors/plugins/locationshare/locationshare.js"></script>
+    <!-- Leaflet Plugins: Location Hash -->
+    <script src="/vendors/plugins/locationhash/locationhash.js"></script>
 
     <!-- Leaflet Plugins: Fullscreen -->
     <script src="/vendors/plugins/fullscreen/Leaflet.fullscreen.min.js"></script>
@@ -44,13 +62,11 @@
 
     <!-- Leaflet Plugins: Search -->
 
-
-
-    
     <!-- Leaflet Markers: Icons -->
     <script src="/src/icons.js"></script>
 
     <!-- Leaflet Markers: Data -->
+    <script src="/data/regions.js"></script>
     <script src="/data/capitals.js"></script>
     <script src="/data/cities.js"></script>
     <script src="/data/keeps.js"></script>
