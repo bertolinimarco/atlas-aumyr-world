@@ -20,20 +20,53 @@
   </head>
   <body class="select-page">
     <style>
+      * {
+        font-family: "Asul", sans-serif;
+      }
       .section {
         padding: 30px 0;
       }
       .select-page {
-        background: #f1f1f1;
+        background-image: url(https://www.aumyr.world/assets/img/bg-home-white.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: calc(100vh - 78px);
       }
-      .section-logo {
-        margin: 5% 0;
+      .section-logo h1 {
+        font-size: 3rem;
+        font-weight: 700;
       }
       .section-logo img {
         max-height: 130px;
         max-width: 100%;
         display: block;
-        margin: 3rem auto 1.5rem;
+        margin: 0 auto 30px;
+      }
+      .section.section-footer p {
+        font-size: 11px;
+        color: #ccc;
+      }
+
+      /* Flags */
+      .flag {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        background-repeat: no-repeat;
+      }
+      .flag-it {
+        background-image: url(/assets/flags/flag-it.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .flag-uk {
+        background-image: url(/assets/flags/flag-uk.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .disabled {
+        opacity: 0.2;
+        pointer-events: none;
       }
     </style>
 
@@ -45,6 +78,7 @@
               src="https://www.aumyr.world/assets/img/logo-aumyr-world.svg"
               alt=""
             />
+            <h1>Atlas</h1>
           </div>
         </div>
       </div>
@@ -52,31 +86,43 @@
     <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <select id="js-selectLanguage">
-              <option value="it" selected>Italiano</option>
-              <option value="en">English</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 text-center">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">
-                  bla
+                  Aumyr
                 </h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-                  eius?
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                  nostrum ipsa corporis? Maiores, tempore vero vitae perferendis
+                  quis quos illo!
                 </p>
-
-                <a
-                  href="/it/aumyr.html"
-                  class="stretched-link js-linkLanguage"
-                ></a>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="/it/aumyr.html">
+                      <div class="flag flag-it"></div>
+                    </a>
+                  </li>
+                  <li class="list-inline-item disabled">
+                    <a href="#">
+                      <div class="flag flag-uk"></div>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>
+              CC 4.0 • Marco Bertolini - info@aumyr.world - Based on open source
+              libraries (Leafletjs)
+            </p>
           </div>
         </div>
       </div>
@@ -101,7 +147,10 @@
     <script>
       // select language
       $("#js-selectLanguage").change(function() {
-        $(".js-linkLanguage").attr("href", "/" + $(this).val() + "/aumyr.html");
+        $(".js-linkLanguageAumyr").attr(
+          "href",
+          "/" + $(this).val() + "/aumyr.html"
+        );
       });
     </script>
   </body>

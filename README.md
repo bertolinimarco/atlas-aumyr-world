@@ -1,18 +1,17 @@
 # TODO
 
-- Pagina inziale con scelta (solo una per ora, Aumyr)
-- Bottone per tornare alla scelta delle mappe. Da qui anche versione inglese, andrà ad un altro file .html
+- Iconset per i markers
 - [Ricerca marker su layer multipli](https://github.com/stefanocudini/leaflet-search)
-- Verificare custom popup su location CSS + contenuti (link a aumyr.world o anche altre info?)
-- Mappa politica
-- Minimappa
-- Cambiare le icone di default
+- Mappa linkabile (url hash)
+- Layer con regioni + stile?
+- I ponti diventano luoghi (no simbolo ponte sulla mappa)
 
 ## Forse
 
-- Rifare mappa del mondo senza legenda e parti decorative?
+- Torna alla Home?
+- Rifare mappa del mondo senza legenda e parti decorative
 - Se si, ridefinire i boundaries
-- I ponti diventano luoghi (no simbolo ponte sulla mappa)
+- Minimappa?
 - I nomi sulla mappa diventano markers
   - Strade
   - Foreste

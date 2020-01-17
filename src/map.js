@@ -10,7 +10,17 @@ var map = L.map("map", {
   crs: L.CRS.Simple,
   minZoom: -2,
   maxZoom: 1,
-  layers: [landMap, regions_lg, capitals_lg]
+  layers: [
+    landMap,
+    capitals_lg,
+    cities_lg,
+    keeps_lg,
+    villages_lg,
+    ruins_lg,
+    locations_lg,
+    observatories_lg,
+    portals_lg
+  ]
 });
 
 var bounds = [
@@ -29,10 +39,10 @@ var baseLayers = {
   // Sottosuolo: undergroundMap
 };
 
-// Overlays
-var overlays = {
-  Regioni: regions_lg,
-  Capitali: capitals_lg,
+// Markers
+var markers = {
+  "Regioni<hr>": regions_lg,
+  "Capitali <div class='icon-marker marker-city'></div>": capitals_lg,
   Città: cities_lg,
   Fortezze: keeps_lg,
   Villaggi: villages_lg,
@@ -46,7 +56,7 @@ var overlays = {
 var aumyrBaseMap = L.imageOverlay("/images/aumyr-land.jpg", bounds).addTo(map);
 
 // Control Layers
-L.control.layers(baseLayers, overlays, { collapsed: false }).addTo(map);
+L.control.layers(baseLayers, markers, { collapsed: false }).addTo(map);
 
 // Mouse Position
 // L.control.mousePosition().addTo(map);
@@ -60,7 +70,7 @@ map.addControl(new L.Control.Fullscreen());
 // Plugins: Search
 
 // Debug mode: Get coordinates
-var enable_debug = false;
+var enable_debug = true;
 if (enable_debug == true) {
   // Show popup with coordinates
   var popup = L.popup();
@@ -72,21 +82,19 @@ if (enable_debug == true) {
   }
   map.on("click", onMapClick);
 }
-// Debug mode Draw mode (decomment in prod)
-var options = {
-  position: "topleft",
-  drawMarker: true,
-  drawPolyline: true,
-  drawRectangle: true,
-  drawPolygon: true,
-  drawCircle: true,
-  cutPolygon: true,
-  editMode: true,
-  removalMode: true
-};
-
-// add leaflet.pm controls to the map
-map.pm.addControls(options);
+// // Debug mode Draw mode (decomment in prod)
+// var options = {
+//   position: "topleft",
+//   drawMarker: true,
+//   drawPolyline: true,
+//   drawRectangle: true,
+//   drawPolygon: true,
+//   drawCircle: true,
+//   cutPolygon: true,
+//   editMode: true,
+//   removalMode: true
+// };
+// map.pm.addControls(options);
 
 // // Responsive
 // window.addEventListener('resize', function(event){

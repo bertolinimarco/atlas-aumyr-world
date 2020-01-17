@@ -2,11 +2,11 @@ let capitals_lg = L.layerGroup();
 
 let capitals_markers = [
   {
-    label: "Fivestar",
-    loc: [1562, 3147],
+    label: "Dunmere",
+    loc: [2765, 549.5],
     pop:
-      "<strong>Fivestar</strong> è la più grande città del mondo conosciuto, con i suoi grandi templi, le sue torri millenarie e i suoi palazzi antichi. La leggenda vuole che nel punto esatto in cui i Cinque arrivarono su Aumyr, ora sorga la città, inserita in un promontorio di roccia lavica al centro del Mare della Notte.",
-    link: "https://www.aumyr.world/geography/dreamor.html#fivestar"
+      "<strong>Dunmere</strong> è un grosso insediamento di case dal tetto spiovente e appuntito, un’oasi di civiltà nelle montagne selvagge. Situata in una gola naturale che la protegge dalle incursioni della maggior parte delle creature delle montagne vicine, a Dunmere la gente si concentra a coltivare la terra, ma anche a combattere in arene pubbliche per dimostrare il proprio valore, commerciare o semplicemente bere idromele.",
+    link: "https://www.aumyr.world/geography/nordavind.html#dunmere"
   }
 ];
 
@@ -24,6 +24,6 @@ for (let i = 0; i < capitals_markers.length; i++) {
   );
   marker.bindTooltip(capitals_markers[i].label, {
     // permanent: true,
-    // direction: "bottom"
+    direction: "bottom"
   });
 }

@@ -2,9 +2,9 @@ let ruins_lg = L.layerGroup();
 
 let ruins_markers = [
   {
-    label: "Perdol",
-    loc: [841, 4091],
-    pop: "<strong>Perdol</strong> - Rovina Antica",
+    label: "Valimar",
+    loc: [2419, 338],
+    pop: "<strong>Valimar</strong> - Rovina Antica",
     link: "#"
   }
 ];
@@ -20,5 +20,8 @@ for (let i = 0; i < ruins_markers.length; i++) {
     '" target="_blank" rel="noopener">Leggi di più su ' +
     ruins_markers[i].label +
     "</a>";
-  marker.bindTooltip(ruins_markers[i].label);
+  marker.bindTooltip(ruins_markers[i].label, {
+    // permanent: true,
+    direction: "bottom"
+  });
 }

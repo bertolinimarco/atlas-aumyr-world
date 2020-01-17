@@ -1,9 +1,10 @@
 let locations_lg = L.layerGroup();
 
 let locations_markers = [
+  // Nordavind
   {
-    label: "Grotte di Balur",
-    loc: [1100, 3328],
+    label: "Picco di Kharnat",
+    loc: [2508, 690.5],
     pop: "",
     link: "#"
   }
@@ -20,5 +21,8 @@ for (let i = 0; i < locations_markers.length; i++) {
     '" target="_blank" rel="noopener">Leggi di più su ' +
     locations_markers[i].label +
     "</a>";
-  marker.bindTooltip(locations_markers[i].label);
+  marker.bindTooltip(locations_markers[i].label, {
+    // permanent: true,
+    direction: "bottom"
+  });
 }
