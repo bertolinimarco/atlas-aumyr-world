@@ -18,7 +18,7 @@ let regions_markers = [
       [3116, 1452],
       [3096, 1028]
     ],
-    pop: "asdasd",
+    pop: "",
     link: "#"
   }
 ];
@@ -28,14 +28,14 @@ for (let i = 0; i < regions_markers.length; i++) {
     className: "region region-" + regions_markers[i].label,
     icon: marker_icon_region
   }).addTo(regions_lg);
-  marker.bindPopup(
-    regions_markers[i].pop +
-      '<hr><a href="' +
-      regions_markers[i].link +
-      '" target="_blank" rel="noopener">Leggi di più su ' +
-      regions_markers[i].label +
-      "</a>"
-  );
+  // marker.bindPopup(
+  //   regions_markers[i].pop +
+  //     '<hr><a href="' +
+  //     regions_markers[i].link +
+  //     '" target="_blank" rel="noopener">Leggi di più su ' +
+  //     regions_markers[i].label +
+  //     "</a>"
+  // );
   marker.bindTooltip(regions_markers[i].label, {
     className: "region-tooltip",
     permanent: true,
