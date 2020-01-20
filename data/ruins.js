@@ -3,8 +3,14 @@ let ruins_lg = L.layerGroup();
 let ruins_markers = [
   {
     label: "Valimar",
-    loc: [2419, 338],
+    loc: [2343, 246.5],
     pop: "<strong>Valimar</strong> - Rovina Antica",
+    link: "#"
+  },
+  {
+    label: "Zimara",
+    loc: [2993, 1990],
+    pop: "<strong>Zimara</strong> - Rovina Antica",
     link: "#"
   }
 ];

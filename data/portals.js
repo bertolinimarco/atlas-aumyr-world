@@ -3,7 +3,7 @@ let portals_lg = L.layerGroup();
 let portals_markers = [
   {
     label: "Portale di Fivestar",
-    loc: [1618, 3120],
+    loc: [1543, 3045],
     pop: "",
     link: "#"
   }
@@ -20,5 +20,8 @@ for (let i = 0; i < portals_markers.length; i++) {
     '" target="_blank" rel="noopener">Leggi di più su ' +
     portals_markers[i].label +
     "</a>";
-  marker.bindTooltip(portals_markers[i].label);
+  marker.bindTooltip(portals_markers[i].label, {
+    // permanent: true,
+    direction: "bottom"
+  });
 }

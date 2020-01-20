@@ -12,6 +12,11 @@ var map = L.map("map", {
   maxZoom: 1,
   layers: [
     landMap,
+    roads_lg,
+    mountains_lg,
+    islands_lg,
+    waters_lg,
+    hills_lg,
     capitals_lg,
     cities_lg,
     keeps_lg,
@@ -25,13 +30,13 @@ var map = L.map("map", {
 
 var bounds = [
   [0, 0],
-  [3342, 4942]
+  [3200, 4800]
 ];
 
 map.fitBounds(bounds);
 
 // Layers
-// undergroundMap = L.imageOverlay("/images/aumyr-underground.jpg", bounds);
+// undergroundMap = L.imageOverlay("/data/maps/aumyr-underground.jpg", bounds);
 
 // BaseLayers
 var baseLayers = {
@@ -53,7 +58,38 @@ var markers = {
 };
 
 // Init base Map
-var aumyrBaseMap = L.imageOverlay("/images/aumyr-land.jpg", bounds).addTo(map);
+var aumyrBaseMap = L.imageOverlay("/data/maps/aumyr-land-2.jpg", bounds).addTo(
+  map
+);
+
+// On zoom, show/hide labels
+var visible;
+
+//// Change Tooltip size on zoom
+// map.on("zoomstart", function() {
+//   var zoomLevel = map.getZoom();
+//   var tooltip = $(".leaflet-tooltip");
+
+//   switch (zoomLevel) {
+//     case -2:
+//       tooltip.css("font-size", 8);
+//       break;
+//     case -1:
+//       tooltip.css("font-size", 10);
+//       break;
+//     case 0:
+//       tooltip.css("font-size", 12);
+//       break;
+//     case 1:
+//       tooltip.css("font-size", 14);
+//       break;
+//     case 2:
+//       tooltip.css("font-size", 16);
+//       break;
+//     default:
+//       tooltip.css("font-size", 10);
+//   }
+// });
 
 // Control Layers
 L.control.layers(baseLayers, markers, { collapsed: false }).addTo(map);

@@ -4,25 +4,32 @@ let cities_markers = [
   // Nordavind
   {
     label: "Hilden",
-    loc: [2544, 530],
+    loc: [2473.5, 457.5],
     pop: "",
     link: "#"
   },
   {
     label: "Endur",
-    loc: [2400, 473],
+    loc: [2328.5, 400.5],
     pop: "",
     link: "#"
   },
   {
     label: "Icegate",
-    loc: [2561, 942],
+    loc: [2510.5, 863.5],
     pop: "",
     link: "#"
   },
   {
     label: "Meremar",
-    loc: [2952, 1239],
+    loc: [2881, 1171.5],
+    pop: "",
+    link: "#"
+  },
+  // Valdarn
+  {
+    label: "Daxxos",
+    loc: [2678, 1331],
     pop: "",
     link: "#"
   }

@@ -4,7 +4,7 @@ let keeps_markers = [
   // Nordavind
   {
     label: "Torregrigia",
-    loc: [2789, 796],
+    loc: [2712, 738],
     pop: "",
     link: "#"
   }

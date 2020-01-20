@@ -4,7 +4,14 @@ let locations_markers = [
   // Nordavind
   {
     label: "Picco di Kharnat",
-    loc: [2508, 690.5],
+    loc: [2464, 630],
+    pop: "",
+    link: "#"
+  },
+  //Valdarn
+  {
+    label: "Pietre Parlanti",
+    loc: [2723, 1533],
     pop: "",
     link: "#"
   }

@@ -3,7 +3,7 @@ let observatories_lg = L.layerGroup();
 let observatories_markers = [
   {
     label: "Osservatorio Gaulur",
-    loc: [386, 2778.5],
+    loc: [308, 2710],
     pop: "",
     link: "#"
   }

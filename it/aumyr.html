@@ -16,7 +16,7 @@
     /> -->
 
     <!-- CSS: Leaflet -->
-    <link rel="stylesheet" href="/vendors/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="/assets/vendors/leaflet/leaflet.css" />
     <!-- Leaflet Drawing Plugin: https://github.com/codeofsumit/leaflet.pm -->
     <link
       rel="stylesheet"
@@ -26,7 +26,7 @@
     <!-- Leaflet Plugins: Fullscreen -->
     <link
       rel="stylesheet"
-      href="/vendors/plugins/fullscreen/leaflet.fullscreen.css"
+      href="/assets/vendors/plugins/fullscreen/leaflet.fullscreen.css"
     />
 
     <!-- Leaflet Plugins: Mouse Position -->
@@ -42,23 +42,21 @@
     </style> -->
   </head>
   <body>
-    <div class="back-to-home">
-      <a href="/"><div class="icon icon-home"></div></a>
-    </div>
+
     <div id="map"></div>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
     <!-- Leaflet -->
-    <script src="/vendors/leaflet/leaflet.js"></script>
+    <script src="/assets/vendors/leaflet/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.pm@latest/dist/leaflet.pm.min.js"></script>
 
     <!-- Leaflet Plugins: Location Hash -->
-    <script src="/vendors/plugins/locationhash/locationhash.js"></script>
+    <script src="/assets/vendors/plugins/locationhash/locationhash.js"></script>
 
     <!-- Leaflet Plugins: Fullscreen -->
-    <script src="/vendors/plugins/fullscreen/Leaflet.fullscreen.min.js"></script>
+    <script src="/assets/vendors/plugins/fullscreen/Leaflet.fullscreen.min.js"></script>
 
     <!-- Leaflet Plugins: Mouse Position -->
     <!-- <script src="/vendors/plugins/mouseposition/mouseposition.js"></script> -->
@@ -68,7 +66,14 @@
     <!-- Leaflet Markers: Icons -->
     <script src="/src/icons.js"></script>
 
-    <!-- Leaflet Markers: Data -->
+    <!-- Leaflet Markers: Terrain -->
+    <script src="/data/terrain/mountains.js"></script>
+    <script src="/data/terrain/islands.js"></script>
+    <script src="/data/terrain/waters.js"></script>
+    <script src="/data/terrain/hills.js"></script>
+
+    <!-- Leaflet Markers: POIs -->
+    <script src="/data/roads.js"></script>
     <script src="/data/regions.js"></script>
     <script src="/data/capitals.js"></script>
     <script src="/data/cities.js"></script>
