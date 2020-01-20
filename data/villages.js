@@ -239,6 +239,79 @@ let villages_markers = [
     loc: [1546, 4095],
     pop: "",
     link: "#"
+  },
+  // Inkari
+  {
+    label: "Fieldgrave",
+    loc: [1348, 4454],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Thymar",
+    loc: [1172, 4378],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Hunteron",
+    loc: [1219, 4593],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fieldgrave",
+    loc: [1348, 4454],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fieldgrave",
+    loc: [1348, 4454],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Bhalair",
+    loc: [1002, 4487],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Veo-Thrash",
+    loc: [1021, 4661],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Hypnos",
+    loc: [709, 4511],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Gaormer",
+    loc: [638, 4203],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Yard",
+    loc: [257, 4135],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Vohn",
+    loc: [83, 4033],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Orkus",
+    loc: [174, 4330],
+    pop: "",
+    link: "#"
   }
 ];
 

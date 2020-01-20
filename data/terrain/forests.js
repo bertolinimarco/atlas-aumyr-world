@@ -6,6 +6,24 @@ let forests_markers = [
     loc: [2582, 3834],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Giungle del Cacciatore",
+    loc: [1304, 4660],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Bosco della Prova",
+    loc: [1035, 4270],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Giungle di Mardok",
+    loc: [320, 4550],
+    pop: "",
+    link: "#"
   }
 ];
 

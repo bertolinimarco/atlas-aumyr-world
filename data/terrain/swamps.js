@@ -12,6 +12,18 @@ let swamps_markers = [
     loc: [1794, 3899],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Palude Nera",
+    loc: [822, 4380],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Acquitrino di Moor",
+    loc: [387, 4289],
+    pop: "",
+    link: "#"
   }
 ];
 

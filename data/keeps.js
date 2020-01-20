@@ -41,6 +41,12 @@ let keeps_markers = [
     loc: [2154, 3924],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Sale dei Ricordi",
+    loc: [527, 4430],
+    pop: "",
+    link: "#"
   }
 ];
 

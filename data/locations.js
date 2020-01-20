@@ -40,6 +40,19 @@ let locations_markers = [
     loc: [2316, 4378],
     pop: "",
     link: "#"
+  },
+  // Inkari
+  {
+    label: "Ghar-Melon",
+    loc: [159, 4075],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Bocca di Pietra",
+    loc: [1097, 4602],
+    pop: "",
+    link: "#"
   }
 ];
 

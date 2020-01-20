@@ -101,6 +101,43 @@ let cities_markers = [
     loc: [1480, 4049],
     pop: "",
     link: "#"
+  },
+  // Inkari
+  {
+    label: "Jundarai",
+    loc: [1274, 4254],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Radaris",
+    loc: [977, 4390],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Geldast",
+    loc: [688, 4370],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Heldar",
+    loc: [599, 4324],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Nimirdaz",
+    loc: [279, 4270],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Hang-Dar",
+    loc: [186, 3969],
+    pop: "",
+    link: "#"
   }
 ];
 

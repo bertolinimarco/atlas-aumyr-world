@@ -12,6 +12,12 @@ let portals_markers = [
     loc: [2747, 3892],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Portale di Geldast",
+    loc: [731, 4393],
+    pop: "",
+    link: "#"
   }
 ];
 

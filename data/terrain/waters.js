@@ -84,6 +84,24 @@ let waters_markers = [
     loc: [1424, 3926],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Stretto di Korush",
+    loc: [570, 4152],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Costa Selvaggia",
+    loc: [350, 4132],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Costa Solitaria",
+    loc: [70, 4254],
+    pop: "",
+    link: "#"
   }
 ];
 
