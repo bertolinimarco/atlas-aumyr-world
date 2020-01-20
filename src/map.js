@@ -12,20 +12,21 @@ var map = L.map("map", {
   maxZoom: 1,
   layers: [
     landMap,
-    regions_lg
-    // roads_lg,
-    // mountains_lg,
-    // islands_lg,
-    // waters_lg,
-    // hills_lg,
-    // capitals_lg,
-    // cities_lg,
-    // keeps_lg,
-    // villages_lg,
-    // ruins_lg,
-    // locations_lg,
-    // observatories_lg,
-    // portals_lg
+    roads_lg,
+    mountains_lg,
+    islands_lg,
+    waters_lg,
+    hills_lg,
+    forests_lg,
+    swamps_lg,
+    capitals_lg,
+    cities_lg,
+    keeps_lg,
+    villages_lg,
+    ruins_lg,
+    locations_lg,
+    observatories_lg,
+    portals_lg
   ]
 });
 
@@ -52,10 +53,10 @@ var markers = {
   Città: cities_lg,
   Fortezze: keeps_lg,
   Villaggi: villages_lg,
-  Rovine: ruins_lg,
-  Luoghi: locations_lg,
+  "Luoghi<hr>": locations_lg,
   Osservatori: observatories_lg,
-  Portali: portals_lg
+  Portali: portals_lg,
+  Rovine: ruins_lg
 };
 
 // Init base Map
@@ -107,7 +108,7 @@ map.addControl(new L.Control.Fullscreen());
 // Plugins: Search
 
 // Debug mode: Get coordinates
-var enable_debug = false;
+var enable_debug = true;
 if (enable_debug == true) {
   // Show popup with coordinates
   var popup = L.popup();
@@ -119,19 +120,19 @@ if (enable_debug == true) {
   }
   map.on("click", onMapClick);
 }
-// Debug mode Draw mode (decomment in prod)
-var options = {
-  position: "topleft",
-  drawMarker: true,
-  drawPolyline: true,
-  drawRectangle: true,
-  drawPolygon: true,
-  drawCircle: true,
-  cutPolygon: true,
-  editMode: true,
-  removalMode: true
-};
-map.pm.addControls(options);
+// // Debug mode Draw mode (decomment in prod)
+// var options = {
+//   position: "topleft",
+//   drawMarker: true,
+//   drawPolyline: true,
+//   drawRectangle: true,
+//   drawPolygon: true,
+//   drawCircle: true,
+//   cutPolygon: true,
+//   editMode: true,
+//   removalMode: true
+// };
+// map.pm.addControls(options);
 
 // // Responsive
 // window.addEventListener('resize', function(event){

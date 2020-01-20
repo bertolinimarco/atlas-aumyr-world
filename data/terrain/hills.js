@@ -6,6 +6,18 @@ let hills_markers = [
     loc: [2561, 1830],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Valle di Samard",
+    loc: [2600, 3205],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Piane di Erthell",
+    loc: [2187, 4111],
+    pop: "",
+    link: "#"
   }
 ];
 

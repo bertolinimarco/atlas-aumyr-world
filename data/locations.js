@@ -14,6 +14,32 @@ let locations_markers = [
     loc: [2723, 1533],
     pop: "",
     link: "#"
+  },
+  // Zeitan
+  {
+    label: "Morius",
+    loc: [2940, 2534],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Valle dell'Eco",
+    loc: [3007, 3299],
+    pop: "",
+    link: "#"
+  },
+  // Laangor
+  {
+    label: "Campoverde",
+    loc: [2581, 3989],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Cava delle Pietre Rosse",
+    loc: [2316, 4378],
+    pop: "",
+    link: "#"
   }
 ];
 

@@ -6,6 +6,12 @@ let roads_markers = [
     loc: [2570, 1634],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Via delle Carovane",
+    loc: [2336, 3848],
+    pop: "",
+    link: "#"
   }
 ];
 

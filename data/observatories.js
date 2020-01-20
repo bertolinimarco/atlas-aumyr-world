@@ -6,6 +6,12 @@ let observatories_markers = [
     loc: [308, 2710],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Osservatorio Nembus",
+    loc: [2827, 4615],
+    pop: "",
+    link: "#"
   }
 ];
 

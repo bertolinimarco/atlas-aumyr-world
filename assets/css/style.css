@@ -109,8 +109,8 @@ a:hover {
   background: transparent;
   border: 0;
   box-shadow: none;
-  color: #555;
-  text-shadow: 0 0 2px #9a7955;
+  color: #000;
+  text-shadow: 0 0 2px #ffffff;
   font-weight: bold;
 }
 .leaflet-tooltip.label-mountains {
@@ -147,5 +147,23 @@ a:hover {
   box-shadow: none;
   color: #fff;
   text-shadow: 0 0 2px #a04102;
+  font-weight: bold;
+}
+.leaflet-tooltip.label-forests {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  text-shadow: 0 0 2px #006600;
+  font-weight: bold;
+}
+.leaflet-tooltip.label-swamps {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  text-shadow: 0 0 2px #006600;
   font-weight: bold;
 }

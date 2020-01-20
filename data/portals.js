@@ -6,6 +6,12 @@ let portals_markers = [
     loc: [1543, 3045],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Portale di Highpine",
+    loc: [2747, 3892],
+    pop: "",
+    link: "#"
   }
 ];
 

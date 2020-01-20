@@ -42,6 +42,48 @@ let waters_markers = [
     loc: [2999, 2338],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Golfo di Nordur",
+    loc: [3100, 2829],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiume Brosk",
+    loc: [2735, 2809],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lago Belit",
+    loc: [2776, 2909],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Mare dei Ghiacci Perenni",
+    loc: [2990, 4009],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Baia di Acquerosse",
+    loc: [2310, 4578],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Mare del Tramonto",
+    loc: [1782, 4604],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Isole dei Morti",
+    loc: [1424, 3926],
+    pop: "",
+    link: "#"
   }
 ];
 

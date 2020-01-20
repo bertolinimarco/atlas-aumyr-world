@@ -1,7 +1,6 @@
 let islands_lg = L.layerGroup();
 
 let islands_markers = [
-  // Nordavind
   {
     label: "Penisola di Voros",
     loc: [2734, 1013],
@@ -35,6 +34,18 @@ let islands_markers = [
   {
     label: "Lightbringer",
     loc: [1937.5, 364.5],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Deadmor",
+    loc: [1490, 3897],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Etheris",
+    loc: [1366, 3992],
     pop: "",
     link: "#"
   }

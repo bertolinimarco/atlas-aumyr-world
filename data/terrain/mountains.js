@@ -30,6 +30,24 @@ let mountains_markers = [
     loc: [2950, 2167],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Picchi della Mente",
+    loc: [2980, 2488],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Corni delle Tempeste",
+    loc: [3000, 3404],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Montagne della Luna",
+    loc: [2178, 4374],
+    pop: "",
+    link: "#"
   }
 ];
 

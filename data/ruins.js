@@ -12,6 +12,12 @@ let ruins_markers = [
     loc: [2993, 1990],
     pop: "<strong>Zimara</strong> - Rovina Antica",
     link: "#"
+  },
+  {
+    label: "Gherzul",
+    loc: [1705, 4032],
+    pop: "<strong>Gherzul</strong> - Rovina Antica",
+    link: "#"
   }
 ];
 

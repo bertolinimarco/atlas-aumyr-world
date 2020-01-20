@@ -13,6 +13,24 @@ let capitals_markers = [
     loc: [2856.5, 2122],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Nordur",
+    loc: [2906, 2812],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Highpine",
+    loc: [2719, 3937],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Silverstone",
+    loc: [1863, 4333],
+    pop: "",
+    link: "#"
   }
 ];
 

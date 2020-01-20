@@ -7,6 +7,40 @@ let keeps_markers = [
     loc: [2712, 738],
     pop: "",
     link: "#"
+  },
+  // Valdarn
+  {
+    label: "Faux Edge",
+    loc: [3142, 2412],
+    pop: "",
+    link: "#"
+  },
+  // Zeitan
+  {
+    label: "Cittadella del Vuoto",
+    loc: [2679, 3335],
+    pop: "",
+    link: "#"
+  },
+  // Laangor
+  {
+    label: "Castello Darkwind",
+    loc: [2765, 3799],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Angor",
+    loc: [3156, 4422],
+    pop: "",
+    link: "#"
+  },
+  // Jhert
+  {
+    label: "Sale del Tramonto",
+    loc: [2154, 3924],
+    pop: "",
+    link: "#"
   }
 ];
 
