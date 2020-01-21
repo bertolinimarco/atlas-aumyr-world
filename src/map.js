@@ -166,18 +166,18 @@ if (enable_debug == true) {
   map.on("click", onMapClick);
 }
 // // Debug mode Draw mode (decomment in prod)
-var options = {
-  position: "topleft",
-  drawMarker: true,
-  drawPolyline: true,
-  drawRectangle: true,
-  drawPolygon: true,
-  drawCircle: true,
-  cutPolygon: true,
-  editMode: true,
-  removalMode: true
-};
-map.pm.addControls(options);
+// var options = {
+//   position: "topleft",
+//   drawMarker: true,
+//   drawPolyline: true,
+//   drawRectangle: true,
+//   drawPolygon: true,
+//   drawCircle: true,
+//   cutPolygon: true,
+//   editMode: true,
+//   removalMode: true
+// };
+// map.pm.addControls(options);
 
 // // Responsive
 // window.addEventListener('resize', function(event){
