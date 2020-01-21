@@ -47,7 +47,7 @@ a:hover {
 }
 
 /* Plugin: Location Share */
-.leaflet-popup-content .location-share {
+/* .leaflet-popup-content .location-share {
   border: 0;
   border-bottom: 1px solid #ccc;
   font-size: 14px;
@@ -61,6 +61,9 @@ a:hover {
   padding: 8px 12px;
   margin-top: 9px;
   width: 100%;
+} */
+
+.leaflet-control-search .search-input {
 }
 
 /* Leaflet Popup */
@@ -166,4 +169,15 @@ a:hover {
   color: #fff;
   text-shadow: 0 0 2px #006600;
   font-weight: bold;
+}
+
+/* Search */
+.leaflet-control-search .search-tooltip {
+  margin: 0;
+}
+.leaflet-control-search .search-tip {
+  width: 100%;
+  margin: 0 0 1px;
+  border-radius: 0;
+  padding: 4px 8px;
 }

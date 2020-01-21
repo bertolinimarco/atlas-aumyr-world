@@ -1,5 +1,4 @@
-var mapAttributes =
-  '&copy; CC BY SA 4.0 | <a href="https://www.aumyr.world" target="_blank" rel="noopener">Aumyr</a>';
+var mapAttributes = '<a href="#" target="_blank" rel="noopener">Info</a>';
 
 var landMap = L.tileLayer("", {
   id: "aumyr-land",
@@ -10,6 +9,7 @@ var map = L.map("map", {
   crs: L.CRS.Simple,
   minZoom: -2,
   maxZoom: 1,
+  zoomControl: false,
   layers: [
     landMap,
     roads_lg,
@@ -53,7 +53,7 @@ var markers = {
   Città: cities_lg,
   Fortezze: keeps_lg,
   Villaggi: villages_lg,
-  "Luoghi<hr>": locations_lg,
+  Luoghi: locations_lg,
   Osservatori: observatories_lg,
   Portali: portals_lg,
   Rovine: ruins_lg
@@ -64,17 +64,60 @@ var aumyrBaseMap = L.imageOverlay("/data/maps/aumyr-land-2.jpg", bounds).addTo(
   map
 );
 
-// On zoom, show/hide labels
-var visible;
+// Concat Markers for search
+var allMarkers = villages_markers.concat(
+  roads_markers,
+  mountains_markers,
+  islands_markers,
+  waters_markers,
+  hills_markers,
+  forests_markers,
+  swamps_markers,
+  capitals_markers,
+  cities_markers,
+  keeps_markers,
+  ruins_markers,
+  locations_markers,
+  observatories_markers,
+  portals_markers
+);
 
-//// Change Tooltip size on zoom
-// map.on("zoomstart", function() {
+// console.table(allMarkers);
+
+// Search
+function getAllData(text, callResponse) {
+  callResponse(allMarkers);
+  return {
+    abort: function() {
+      // console.log("aborted request:" + text);
+    }
+  };
+}
+
+map.addControl(
+  new L.Control.Search({
+    propertyName: "label",
+    sourceData: getAllData,
+    textPlaceholder: "Cerca...",
+    textErr: "Nessun luogo trovato",
+    textCancel: "Annulla",
+    hideMarkerOnCollapse: true,
+    markerLocation: true,
+    zoom: 1
+  })
+);
+
+// //On zoom, show/hide labels
+// var visible;
+
+// // Change Tooltip size on zoom
+// map.on("zoom", function() {
 //   var zoomLevel = map.getZoom();
 //   var tooltip = $(".leaflet-tooltip");
 
 //   switch (zoomLevel) {
 //     case -2:
-//       tooltip.css("font-size", 8);
+//       tooltip.css("font-size", 0);
 //       break;
 //     case -1:
 //       tooltip.css("font-size", 10);
@@ -94,7 +137,7 @@ var visible;
 // });
 
 // Control Layers
-L.control.layers(baseLayers, markers, { collapsed: false }).addTo(map);
+L.control.layers(baseLayers, markers, { collapsed: true }).addTo(map);
 
 // Mouse Position
 // L.control.mousePosition().addTo(map);
@@ -103,12 +146,17 @@ L.control.layers(baseLayers, markers, { collapsed: false }).addTo(map);
 var hash = new L.Hash(map);
 
 // Plugins: Fullscreen
-map.addControl(new L.Control.Fullscreen());
+map.addControl(new L.Control.Fullscreen({ position: "bottomleft" }));
 
-// Plugins: Search
+// Zoom
+L.control
+  .zoom({
+    position: "bottomleft"
+  })
+  .addTo(map);
 
 // Debug mode: Get coordinates
-var enable_debug = true;
+var enable_debug = false;
 if (enable_debug == true) {
   // Show popup with coordinates
   var popup = L.popup();

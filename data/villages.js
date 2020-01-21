@@ -5,48 +5,56 @@ let villages_markers = [
   {
     label: "Treskor",
     loc: [2474, 372],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Odinport",
     loc: [2342, 724],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Laskhan",
     loc: [2648, 892],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Waybridge",
     loc: [2358, 928],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Respirion",
     loc: [2578, 1053],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Lodoss",
     loc: [2831, 1020],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Urgul",
     loc: [2855, 1321],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Vast",
     loc: [2204, 746],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
@@ -54,48 +62,56 @@ let villages_markers = [
   {
     label: "Yrodsun",
     loc: [2473, 1406.5],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Kemerin",
     loc: [2647, 1449],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Stonebeard",
     loc: [2675, 1684.5],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Cynosur",
     loc: [2820.5, 1560],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Farpoint",
     loc: [2949, 1807],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Algese",
     loc: [2887, 2043],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Namzar",
     loc: [2710, 2074],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
   {
     label: "Mur-Dalmaz",
     loc: [2786, 2346],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
@@ -103,6 +119,7 @@ let villages_markers = [
   {
     label: "Aaris",
     loc: [2780, 2614],
+    category: "Villaggio",
     pop: "",
     link: "#"
   },
