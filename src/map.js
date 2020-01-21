@@ -38,12 +38,12 @@ var bounds = [
 map.fitBounds(bounds);
 
 // Layers
-// undergroundMap = L.imageOverlay("/data/maps/aumyr-underground.jpg", bounds);
+// otherMap = L.imageOverlay("/data/maps/aumyr-underground.jpg", bounds);
 
 // BaseLayers
 var baseLayers = {
-  Aumyr: landMap // "Superficie?"
-  // Sottosuolo: undergroundMap
+  Aumyr: landMap
+  // Altro Layer: otherMap
 };
 
 // Markers
@@ -139,9 +139,6 @@ map.addControl(
 // Control Layers
 L.control.layers(baseLayers, markers, { collapsed: true }).addTo(map);
 
-// Mouse Position
-// L.control.mousePosition().addTo(map);
-
 // Hash
 var hash = new L.Hash(map);
 
@@ -169,18 +166,18 @@ if (enable_debug == true) {
   map.on("click", onMapClick);
 }
 // // Debug mode Draw mode (decomment in prod)
-// var options = {
-//   position: "topleft",
-//   drawMarker: true,
-//   drawPolyline: true,
-//   drawRectangle: true,
-//   drawPolygon: true,
-//   drawCircle: true,
-//   cutPolygon: true,
-//   editMode: true,
-//   removalMode: true
-// };
-// map.pm.addControls(options);
+var options = {
+  position: "topleft",
+  drawMarker: true,
+  drawPolyline: true,
+  drawRectangle: true,
+  drawPolygon: true,
+  drawCircle: true,
+  cutPolygon: true,
+  editMode: true,
+  removalMode: true
+};
+map.pm.addControls(options);
 
 // // Responsive
 // window.addEventListener('resize', function(event){
