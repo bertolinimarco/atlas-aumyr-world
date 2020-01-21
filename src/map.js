@@ -142,15 +142,15 @@ L.control.layers(baseLayers, markers, { collapsed: true }).addTo(map);
 // Hash
 var hash = new L.Hash(map);
 
-// Plugins: Fullscreen
-map.addControl(new L.Control.Fullscreen({ position: "bottomleft" }));
-
 // Zoom
 L.control
   .zoom({
-    position: "bottomleft"
+    position: "topleft"
   })
   .addTo(map);
+
+// Plugins: Fullscreen
+map.addControl(new L.Control.Fullscreen({ position: "topleft" }));
 
 // Debug mode: Get coordinates
 var enable_debug = false;
