@@ -1,4 +1,4 @@
-var mapAttributes = '<a href="#" target="_blank" rel="noopener">Info</a>';
+var mapAttributes = '<span id="openModalInfo">Info</span>';
 
 var landMap = L.tileLayer("", {
   id: "aumyr-land",
