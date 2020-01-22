@@ -218,9 +218,10 @@ img.icon-share-button {
 }
 .leaflet-control-search .search-tip {
   width: 100%;
-  margin: 0 0 1px;
+  margin: 1px 0 1px;
+  padding: 7px 9px;
+  min-width: 180px;
   border-radius: 0;
-  padding: 4px 8px;
 }
 
 .leaflet-control.leaflet-control-search {
@@ -233,7 +234,7 @@ img.icon-share-button {
   height: auto;
   outline: none;
   border: 0;
-  padding: 7px 9px;
+  padding: 7px 36px 7px 9px;
 }
 
 /* Location Share fix */

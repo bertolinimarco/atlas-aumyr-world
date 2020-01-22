@@ -1,4 +1,4 @@
-var aumyrCopy = '&copy; CC BY SA <a href="https://www.aumyr.world">Aumyr World</a>';
+var aumyrCopy = '<a href="https://www.aumyr.world">Info</a>';
 // var aumyrOtherCopy = '<span id="openModalInfo">Info</span>';
 
 var landMap = L.tileLayer("", {
