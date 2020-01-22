@@ -53,6 +53,51 @@ let locations_markers = [
     loc: [1097, 4602],
     pop: "",
     link: "#"
+  },
+  // Aumar
+  {
+    label: "Radura di Bel-Vor",
+    loc: [2380, 1713],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Oldcross",
+    loc: [2377, 2799],
+    pop: "",
+    link: "#"
+  },
+  // Kessen
+  {
+    label: "Fonte Lucente",
+    loc: [2076, 2454],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Torre di Pietra",
+    loc: [1792, 1782],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Uduel",
+    loc: [1534, 2192],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Uvarth",
+    loc: [1918, 2840],
+    pop: "",
+    link: "#"
+  },
+  // Dreamor
+  {
+    label: "Grotte di Balur",
+    loc: [1029, 3260],
+    pop: "",
+    link: "#"
   }
 ];
 
@@ -60,13 +105,14 @@ for (let i = 0; i < locations_markers.length; i++) {
   marker = L.marker(locations_markers[i].loc, {
     icon: marker_icon_location
   }).addTo(locations_lg);
-  marker.bindPopup;
-  locations_markers[i].pop +
-    '<hr><a href="' +
-    locations_markers[i].link +
-    '" target="_blank" rel="noopener">Leggi di più su ' +
-    locations_markers[i].label +
-    "</a>";
+  marker.bindPopup(
+    locations_markers[i].pop +
+      '<hr><a href="' +
+      locations_markers[i].link +
+      '" target="_blank" rel="noopener">Leggi di più su ' +
+      locations_markers[i].label +
+      "</a>"
+  );
   marker.bindTooltip(locations_markers[i].label, {
     // permanent: true,
     direction: "bottom"

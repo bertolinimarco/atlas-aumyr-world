@@ -19,19 +19,31 @@ let portals_markers = [
     pop: "",
     link: "#"
   }
+  // {
+  //   label: "Portale di Damodar",
+  //   loc: [731, 4393],
+  //   pop: "",
+  //   link: "#"
+  // },
+  // {
+  //   label: "Portale di Westorn",
+  //   loc: [731, 4393],
+  //   pop: "",
+  //   link: "#"
+  // }
 ];
 
 for (let i = 0; i < portals_markers.length; i++) {
   marker = L.marker(portals_markers[i].loc, {
     icon: marker_icon_portal
   }).addTo(portals_lg);
-  // marker.bindPopup;
+  // marker.bindPopup(
   // portals_markers[i].pop +
   //   '<hr><a href="' +
   //   portals_markers[i].link +
   //   '" target="_blank" rel="noopener">Leggi di più su ' +
   //   portals_markers[i].label +
-  //   "</a>";
+  //   "</a>");
   marker.bindTooltip(portals_markers[i].label, {
     // permanent: true,
     direction: "bottom"

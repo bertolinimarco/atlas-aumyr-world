@@ -24,6 +24,12 @@ let swamps_markers = [
     loc: [387, 4289],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Palude del Pianto",
+    loc: [1898, 2728],
+    pop: "",
+    link: "#"
   }
 ];
 

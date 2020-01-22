@@ -47,6 +47,26 @@ let keeps_markers = [
     loc: [527, 4430],
     pop: "",
     link: "#"
+  },
+  // Kessen
+  {
+    label: "Felmalein",
+    loc: [1351, 2306],
+    pop: "",
+    link: "#"
+  },
+  // Dreamor
+  {
+    label: "Amakur",
+    loc: [1432, 2822],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Torre Solitaria",
+    loc: [776, 3593],
+    pop: "",
+    link: "#"
   }
 ];
 

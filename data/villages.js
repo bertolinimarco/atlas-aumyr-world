@@ -329,6 +329,232 @@ let villages_markers = [
     loc: [174, 4330],
     pop: "",
     link: "#"
+  },
+  // Aumar
+  {
+    label: "Freshale",
+    loc: [2428, 2071],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Gorasun",
+    loc: [2340, 2208],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Nertel",
+    loc: [2266, 2384],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lemaru",
+    loc: [2369, 1913],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Tuskdorn",
+    loc: [2108, 2117],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Greatdale",
+    loc: [1977, 1944],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Uramel",
+    loc: [2207, 1690],
+    pop: "",
+    link: "#"
+  },
+  // Kessen
+  {
+    label: "Bangor",
+    loc: [1955, 2214],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Felgen",
+    loc: [1549, 2063],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Baurus",
+    loc: [1296, 2470],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Elchidon",
+    loc: [1295, 2548],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Nomodril",
+    loc: [1387, 2674],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Halgon",
+    loc: [1732, 2560],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Imaltar",
+    loc: [1796, 2709],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Yartar",
+    loc: [1976, 2756],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Emmeros",
+    loc: [1538, 2442],
+    pop: "",
+    link: "#"
+  },
+  // Dreamor
+  {
+    label: "Deepwood",
+    loc: [1933, 3225],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Doaeris",
+    loc: [1822, 3462],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Demeriah",
+    loc: [1734, 3220],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Archbridge",
+    loc: [1623, 3223],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Nesos",
+    loc: [1388, 2817],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Aleburg",
+    loc: [1569, 3391],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Gavrin",
+    loc: [1601, 3604],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Imyren",
+    loc: [1475, 3741],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Valygar",
+    loc: [1320, 3549],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Sarisa",
+    loc: [1251, 3710],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Therem",
+    loc: [1153, 3514],
+    pop: "",
+    link: "#"
+  },
+
+  {
+    label: "Demunor",
+    loc: [1154, 3938],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Treemask",
+    loc: [1094, 3854],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Rivershed",
+    loc: [1031, 4028],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Refuge",
+    loc: [825, 3801],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Myron",
+    loc: [947, 3514],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Melikos",
+    loc: [914, 3219],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Baathor",
+    loc: [958, 3119],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Mahog",
+    loc: [1016, 2947],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Blumer",
+    loc: [885, 4062],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Gerinth",
+    loc: [622, 3806],
+    pop: "",
+    link: "#"
   }
 ];
 
@@ -337,14 +563,14 @@ for (let i = 0; i < villages_markers.length; i++) {
     icon: marker_icon_village
   }).addTo(villages_lg);
   // marker
-  //   .bindPopup
+  //   .bindPopup(
   //   villages_markers[i].pop +
   //     '<hr><a href="' +
   //     villages_markers[i].link +
   //     '" target="_blank" rel="noopener">Leggi di più su ' +
   //     villages_markers[i].label +
   //     "</a>"
-  //   ();
+  //   );
   marker.bindTooltip(villages_markers[i].label, {
     // permanent: true,
     direction: "bottom"

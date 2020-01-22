@@ -102,6 +102,48 @@ let waters_markers = [
     loc: [70, 4254],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Lago Thun",
+    loc: [2608, 2691],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lago Magmoor",
+    loc: [2353, 2520],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiume Ator",
+    loc: [2481, 2161],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiume Mor",
+    loc: [2551, 2346],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Grande Fiume",
+    loc: [2102, 2605],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lago Meras",
+    loc: [2200, 2004],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Mare della Notte",
+    loc: [1192, 3046],
+    pop: "",
+    link: "#"
   }
 ];
 

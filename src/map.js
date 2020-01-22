@@ -66,7 +66,7 @@ var markers = {
 };
 
 // Init base Map
-var aumyrBaseMap = L.imageOverlay("/data/maps/aumyr-land-2.jpg", bounds).addTo(
+var aumyrBaseMap = L.imageOverlay("/data/maps/aumyr-min.jpg", bounds).addTo(
   map
 );
 
@@ -141,7 +141,7 @@ map.addControl(
 );
 
 // Debug: Show popup with coordinates
-var enable_debug = false;
+var enable_debug = true;
 if (enable_debug == true) {
   var popup = L.popup();
   function onMapClick(e) {

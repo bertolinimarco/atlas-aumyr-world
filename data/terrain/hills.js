@@ -18,6 +18,24 @@ let hills_markers = [
     loc: [2187, 4111],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Pianure di Eldeen",
+    loc: [2514, 2502],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Colline del Corno",
+    loc: [1546, 1876],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Colline del Silenzio",
+    loc: [831, 3658],
+    pop: "",
+    link: "#"
   }
 ];
 

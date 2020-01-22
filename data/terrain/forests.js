@@ -24,6 +24,30 @@ let forests_markers = [
     loc: [320, 4550],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Foresta della Voce",
+    loc: [2146, 1759],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Valle dei Tre Fiumi",
+    loc: [1584, 2476],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Boscoscuro",
+    loc: [1856, 3233],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Bosco della Moneta",
+    loc: [898, 2979],
+    pop: "",
+    link: "#"
   }
 ];
 

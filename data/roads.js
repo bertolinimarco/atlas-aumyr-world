@@ -12,6 +12,24 @@ let roads_markers = [
     loc: [2336, 3848],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Via dell'Ovest",
+    loc: [2124, 2314],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Strada Lunga",
+    loc: [1886, 1696],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Cammino dei Cinque",
+    loc: [1712, 3492.5],
+    pop: "",
+    link: "#"
   }
 ];
 

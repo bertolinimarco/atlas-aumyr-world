@@ -138,6 +138,69 @@ let cities_markers = [
     loc: [186, 3969],
     pop: "",
     link: "#"
+  },
+  // Aumar
+  {
+    label: "Gamaran",
+    loc: [2565, 2825],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lakeside",
+    loc: [2648, 2657],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lamora",
+    loc: [2164, 2545],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Erth",
+    loc: [2686, 2304],
+    pop: "",
+    link: "#"
+  },
+  // Kessen
+  {
+    label: "Opur",
+    loc: [1600, 2658],
+    pop: "",
+    link: "#"
+  },
+  // Dreamor
+  {
+    label: "Qadris",
+    loc: [1790, 3640],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Morun",
+    loc: [1343, 3419],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Greenriver",
+    loc: [1336, 3829],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Kinderun",
+    loc: [1140, 3338],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lonestar",
+    loc: [748, 2965],
+    pop: "",
+    link: "#"
   }
 ];
 

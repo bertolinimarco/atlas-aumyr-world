@@ -48,6 +48,12 @@ let mountains_markers = [
     loc: [2178, 4374],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Montagne Nebbiose",
+    loc: [1690, 2232],
+    pop: "",
+    link: "#"
   }
 ];
 
