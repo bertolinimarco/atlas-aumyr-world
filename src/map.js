@@ -1,9 +1,15 @@
-var mapAttributes = '<span id="openModalInfo">Info</span>';
+var aumyrCopy = '&copy; CC BY SA <a href="https://www.aumyr.world">Aumyr World</a>';
+// var aumyrOtherCopy = '<span id="openModalInfo">Info</span>';
 
 var landMap = L.tileLayer("", {
   id: "aumyr-land",
-  attribution: mapAttributes
+  attribution: aumyrCopy
 });
+
+// var otherMap = L.tileLayer("", {
+//   id: "aumyr-other",
+//   attribution: mapAttributes
+// });
 
 var map = L.map("map", {
   crs: L.CRS.Simple,
@@ -94,6 +100,7 @@ function getAllData(text, callResponse) {
   };
 }
 
+// Control Search
 map.addControl(
   new L.Control.Search({
     propertyName: "label",
@@ -106,6 +113,62 @@ map.addControl(
     zoom: 1
   })
 );
+
+// Control Layers
+L.control.layers(baseLayers, markers, { collapsed: true }).addTo(map);
+
+// Control Zoom
+L.control
+  .zoom({
+    position: "topleft"
+  })
+  .addTo(map);
+
+// Plugin: Enable Hash
+var hash = new L.Hash(map);
+
+// Plugins: Fullscreen
+map.addControl(
+  new L.Control.Fullscreen({ position: "topleft", title: "Fullscreen" })
+);
+
+// Plugins: Location Share
+map.addControl(
+  new L.Control.ShareLocation({
+    position: "topleft",
+    title: "Condividi Posizione"
+  })
+);
+
+// Debug: Show popup with coordinates
+var enable_debug = false;
+if (enable_debug == true) {
+  var popup = L.popup();
+  function onMapClick(e) {
+    popup
+      .setLatLng(e.latlng)
+      .setContent("Coordinate: " + e.latlng.toString())
+      .openOn(map);
+  }
+  map.on("click", onMapClick);
+}
+
+// Debug: Draw mode
+var enable_draw = false;
+if (enable_draw == true) {
+  var options = {
+    position: "topleft",
+    drawMarker: true,
+    drawPolyline: true,
+    drawRectangle: true,
+    drawPolygon: true,
+    drawCircle: true,
+    cutPolygon: true,
+    editMode: true,
+    removalMode: true
+  };
+  map.pm.addControls(options);
+}
 
 // //On zoom, show/hide labels
 // var visible;
@@ -136,68 +199,14 @@ map.addControl(
 //   }
 // });
 
-// Control Layers
-L.control.layers(baseLayers, markers, { collapsed: true }).addTo(map);
-
-// Hash
-var hash = new L.Hash(map);
-
-// Zoom
-L.control
-  .zoom({
-    position: "topleft"
-  })
-  .addTo(map);
-
-// Plugins: Fullscreen
-map.addControl(new L.Control.Fullscreen({ position: "topleft" }));
-
-// Debug mode: Get coordinates
-var enable_debug = false;
-if (enable_debug == true) {
-  // Show popup with coordinates
-  var popup = L.popup();
-  function onMapClick(e) {
-    popup
-      .setLatLng(e.latlng)
-      .setContent("Coordinate: " + e.latlng.toString())
-      .openOn(map);
+// Responsive
+window.addEventListener("resize", function(event) {
+  var width = document.documentElement.clientWidth;
+  if (width < 768) {
+    map.setZoom(-1);
+    $(".leaflet-control-zoom").css("display", "none");
+  } else {
+    map.setZoom(1);
+    $(".leaflet-control-zoom").css("display", "block");
   }
-  map.on("click", onMapClick);
-}
-// // Debug mode Draw mode (decomment in prod)
-// var options = {
-//   position: "topleft",
-//   drawMarker: true,
-//   drawPolyline: true,
-//   drawRectangle: true,
-//   drawPolygon: true,
-//   drawCircle: true,
-//   cutPolygon: true,
-//   editMode: true,
-//   removalMode: true
-// };
-// map.pm.addControls(options);
-
-// // Responsive
-// window.addEventListener('resize', function(event){
-// // get the width of the screen after the resize event
-// var width = document.documentElement.clientWidth;
-// // tablets are between 768 and 922 pixels wide
-// // phones are less than 768 pixels wide
-// if (width < 768) {
-//     // set the zoom level to 10
-//     map.setZoom(-1);
-// }  else {
-//     // set the zoom level to 8
-//     map.setZoom(1);
-// }
-// });
-
-// PWA
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/sw.js")
-    .then(reg => console.log("service worker registered"))
-    .catch(err => console.log("service worker not registered", err));
-}
+});

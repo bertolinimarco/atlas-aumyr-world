@@ -104,36 +104,30 @@ var marker_icon_mountain = L.icon({
   className: "no-icon icon-mountain",
   iconUrl: "/assets/img/green-marker-icon.png",
   iconRetinaUrl: "/assets/img/green-marker-icon.png",
-  shadowUrl: "/assets/img/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41]
+  tooltipAnchor: [16, -28]
 });
 
 var marker_icon_forest = L.icon({
   className: "no-icon icon-forest",
   iconUrl: "/assets/img/green-marker-icon.png",
   iconRetinaUrl: "/assets/img/green-marker-icon.png",
-  shadowUrl: "/assets/img/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41]
+  tooltipAnchor: [16, -28]
 });
 
 var marker_icon_swamp = L.icon({
   className: "no-icon icon-swamp",
   iconUrl: "/assets/img/green-marker-icon.png",
   iconRetinaUrl: "/assets/img/green-marker-icon.png",
-  shadowUrl: "/assets/img/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41]
+  tooltipAnchor: [16, -28]
 });
 
 var marker_icon_island = L.icon({
@@ -160,10 +154,8 @@ var marker_icon_hills = L.icon({
   className: "no-icon icon-hills",
   iconUrl: "/assets/img/green-marker-icon.png",
   iconRetinaUrl: "/assets/img/green-marker-icon.png",
-  shadowUrl: "/assets/img/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41]
+  tooltipAnchor: [16, -28]
 });

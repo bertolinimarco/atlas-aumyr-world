@@ -222,3 +222,21 @@ img.icon-share-button {
   border-radius: 0;
   padding: 4px 8px;
 }
+
+.leaflet-control.leaflet-control-search {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+  border: 0;
+}
+
+.leaflet-control-search .search-input {
+  margin: 0px;
+  height: auto;
+  outline: none;
+  border: 0;
+  padding: 7px 9px;
+}
+
+/* Location Share fix */
+.leaflet-bottom.leaflet-left {
+  display: none;
+}
