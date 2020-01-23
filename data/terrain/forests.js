@@ -60,6 +60,24 @@ let forests_markers = [
     loc: [152, 3145],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Selva Tagliente",
+    loc: [821, 1090],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Foresta di Nayalis",
+    loc: [942, 2087],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Bosco delle Pietre",
+    loc: [2325, 1275.5],
+    pop: "",
+    link: "#"
   }
 ];
 

@@ -338,6 +338,12 @@ let villages_markers = [
     link: "#"
   },
   {
+    label: "Kar-Magol",
+    loc: [2218, 1484],
+    pop: "",
+    link: "#"
+  },
+  {
     label: "Gorasun",
     loc: [2340, 2208],
     pop: "",
@@ -645,6 +651,184 @@ let villages_markers = [
   {
     label: "Omniros",
     loc: [490, 2456],
+    pop: "",
+    link: "#"
+  },
+  // Thanaros
+  {
+    label: "Tamaz",
+    loc: [549, 2379],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Nur-Shai",
+    loc: [486, 2149],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Oasi di Thanduun",
+    loc: [627, 1799],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Amodrar",
+    loc: [947, 1612],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Zoldanur",
+    loc: [638, 1463],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Helion",
+    loc: [487, 1209],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Shadeven",
+    loc: [647, 1193],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Feldun",
+    loc: [777, 1189],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lightcross",
+    loc: [941, 1314],
+    pop: "",
+    link: "#"
+  },
+  // Laendil
+  {
+    label: "Merron",
+    loc: [1046, 2668],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Anhang",
+    loc: [989, 2456],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Windale",
+    loc: [857, 2310],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Sheagrave",
+    loc: [1028, 1771],
+    pop: "",
+    link: "#"
+  },
+  // Faeland
+  {
+    label: "Tornur",
+    loc: [1676, 1213],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Brannek",
+    loc: [1623, 1128],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Cliffside",
+    loc: [1596, 1354],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Littlewing",
+    loc: [1631, 1657],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Myrdon",
+    loc: [1486, 1116],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Bozern",
+    loc: [1393, 1042],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Demorn",
+    loc: [1220, 1146],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Mirabar",
+    loc: [1054, 1180],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Westorn",
+    loc: [994, 1332],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Oberin",
+    loc: [1289, 1268],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lumens",
+    loc: [1260, 1329],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Avan",
+    loc: [1357, 1723],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Goldrun",
+    loc: [1320, 2003],
+    pop: "",
+    link: "#"
+  },
+  // Kartaren
+  {
+    label: "Qomorn",
+    loc: [2220, 1026],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Noomber",
+    loc: [1956, 1218],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Jherdos",
+    loc: [1926, 1491],
     pop: "",
     link: "#"
   }

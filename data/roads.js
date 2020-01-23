@@ -42,6 +42,18 @@ let roads_markers = [
     loc: [608, 2572],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Via della Sete",
+    loc: [659, 1877],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Via Dorata",
+    loc: [1276, 1920],
+    pop: "",
+    link: "#"
   }
 ];
 

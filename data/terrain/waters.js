@@ -168,6 +168,66 @@ let waters_markers = [
     loc: [427, 2527],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Costa delle Sabbie",
+    loc: [276, 1985],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Baia del Nulla",
+    loc: [214, 1560],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Golfo di Viriana",
+    loc: [500, 1418],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Costa Ombrosa",
+    loc: [666, 1078],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiume della Notte",
+    loc: [1011, 1986],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Baia di Myrdon",
+    loc: [1325, 1144],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Baia del Portale",
+    loc: [929, 1213],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Costa Splendente",
+    loc: [1826, 968],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiume Hor",
+    loc: [2022, 1022],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiume Yator",
+    loc: [2369, 1224],
+    pop: "",
+    link: "#"
   }
 ];
 

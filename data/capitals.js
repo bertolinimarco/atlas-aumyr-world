@@ -73,6 +73,36 @@ let capitals_markers = [
     loc: [464, 3883],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Pendor",
+    loc: [687, 2308],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Viriana",
+    loc: [467, 1246],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Nayalis",
+    loc: [921, 2219],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Elerin",
+    loc: [1555, 1087],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Kartar",
+    loc: [2259, 1126],
+    pop: "",
+    link: "#"
   }
 ];
 

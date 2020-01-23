@@ -78,6 +78,18 @@ let mountains_markers = [
     loc: [697, 2722],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Montagne Dorso di Fiamma",
+    loc: [772, 1990],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Cresta del Mattino",
+    loc: [878, 1393],
+    pop: "",
+    link: "#"
   }
 ];
 

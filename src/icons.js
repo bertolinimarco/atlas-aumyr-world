@@ -120,6 +120,16 @@ var marker_icon_forest = L.icon({
   tooltipAnchor: [16, -28]
 });
 
+var marker_icon_desert = L.icon({
+  className: "no-icon icon-desert",
+  iconUrl: "/assets/img/green-marker-icon.png",
+  iconRetinaUrl: "/assets/img/green-marker-icon.png",
+  iconSize: [25, 41],
+  iconAnchor: [16, 35],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28]
+});
+
 var marker_icon_swamp = L.icon({
   className: "no-icon icon-swamp",
   iconUrl: "/assets/img/green-marker-icon.png",

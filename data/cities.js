@@ -226,6 +226,88 @@ let cities_markers = [
     loc: [396, 2940],
     pop: "",
     link: "#"
+  },
+  // Thanaros
+  {
+    label: "Jademar",
+    loc: [716, 2384],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Sorosh",
+    loc: [428, 2379],
+    pop: "",
+    link: "#"
+  },
+  // Laendil
+  {
+    label: "Jesper",
+    loc: [1154, 2692],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Tamalen",
+    loc: [1241, 2183],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Mistdeep",
+    loc: [1044, 2065],
+    pop: "",
+    link: "#"
+  },
+  // Faeland
+  {
+    label: "Devine",
+    loc: [1413, 1672],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Iratar",
+    loc: [1133, 1686],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Oloruth",
+    loc: [1201, 1483],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Riordan",
+    loc: [1322, 999],
+    pop: "",
+    link: "#"
+  },
+  // Kartaren
+  {
+    label: "Stormvale",
+    loc: [1938, 1571],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Adaren",
+    loc: [1956, 1007],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Weldun",
+    loc: [2421, 1238],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Kantias",
+    loc: [1804, 1079],
+    pop: "",
+    link: "#"
   }
 ];
 

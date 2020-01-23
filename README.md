@@ -1,6 +1,6 @@
 # Aumyr Atlas
 
-Aumyr Interactive Atlas made with LeafletJS, plugins and custom code.
+Aumyr Interactive Atlas
 
 <https://atlas.aumyr.world>
 

@@ -36,6 +36,12 @@ let swamps_markers = [
     loc: [565, 2855],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Paludi Velate",
+    loc: [454, 2315],
+    pop: "",
+    link: "#"
   }
 ];
 

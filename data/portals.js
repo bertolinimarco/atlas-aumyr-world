@@ -18,6 +18,12 @@ let portals_markers = [
     loc: [731, 4393],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Portale di Westorn",
+    loc: [1013, 1294],
+    pop: "",
+    link: "#"
   }
   // {
   //   label: "Portale di Damodar",
@@ -25,12 +31,6 @@ let portals_markers = [
   //   pop: "",
   //   link: "#"
   // },
-  // {
-  //   label: "Portale di Westorn",
-  //   loc: [731, 4393],
-  //   pop: "",
-  //   link: "#"
-  // }
 ];
 
 for (let i = 0; i < portals_markers.length; i++) {

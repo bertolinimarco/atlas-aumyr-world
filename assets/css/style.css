@@ -211,6 +211,15 @@ img.icon-share-button {
   text-shadow: 0 0 2px #006600;
   font-weight: bold;
 }
+.leaflet-tooltip.label-deserts {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  text-shadow: 0 0 2px #b48a00;
+  font-weight: bold;
+}
 
 /* Search */
 .leaflet-control-search .search-tooltip {

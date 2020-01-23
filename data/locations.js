@@ -124,6 +124,32 @@ let locations_markers = [
     loc: [508, 2592],
     pop: "",
     link: "#"
+  },
+  // Faeland
+  {
+    label: "Miniere Fontescura",
+    loc: [1508, 1603],
+    pop: "",
+    link: "#"
+  },
+  // Kartaren
+  {
+    label: "Grotte di Azumai",
+    loc: [1723, 1445],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Avaranth",
+    loc: [2119, 969],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Golgos",
+    loc: [2463, 1130],
+    pop: "",
+    link: "#"
   }
 ];
 

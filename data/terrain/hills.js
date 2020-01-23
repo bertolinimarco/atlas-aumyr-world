@@ -54,6 +54,18 @@ let hills_markers = [
     loc: [2284, 3264],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Pianure di Hethan",
+    loc: [2095, 1277],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Colline Windarn",
+    loc: [2097, 890],
+    pop: "",
+    link: "#"
   }
 ];
 

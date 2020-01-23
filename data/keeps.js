@@ -80,6 +80,51 @@ let keeps_markers = [
     loc: [455, 2767],
     pop: "",
     link: "#"
+  },
+  // Gwaldur
+  {
+    label: "Jalamai",
+    loc: [449, 2106],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Blackraven",
+    loc: [710, 1287],
+    pop: "",
+    link: "#"
+  },
+  // Laendil
+  {
+    label: "Fortezza di Orianur",
+    loc: [894, 2738],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Guardianera",
+    loc: [1157, 1861],
+    pop: "",
+    link: "#"
+  },
+  // Faeland
+  {
+    label: "Città dell'Alba",
+    loc: [1444, 1876],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fortezza di Myrdar",
+    loc: [1124, 1371],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Castello Firemag",
+    loc: [1497, 1313],
+    pop: "",
+    link: "#"
   }
 ];
 
