@@ -16,43 +16,49 @@ let ruins_markers = [
   {
     label: "Gherzul",
     loc: [1705, 4032],
-    pop: "<strong>Gherzul</strong> - Rovina Antica",
+    pop: "",
     link: "#"
   },
   {
     label: "Xartar",
     loc: [2124, 1872],
-    pop: "<strong>Xartar</strong> - Rovina Antica",
+    pop: "",
     link: "#"
   },
   {
     label: "Perdol",
     loc: [764, 4024],
-    pop: "<strong>Perdol</strong> - Rovina Antica",
+    pop: "",
     link: "#"
   },
   {
     label: "Lheng",
     loc: [111, 3467],
-    pop: "<strong>Lheng</strong> - Rovina Antica",
+    pop: "",
     link: "#"
   },
   {
     label: "Kandros",
     loc: [1822, 2363],
-    pop: "<strong>Lheng</strong> - Rovina Antica",
+    pop: "",
     link: "#"
   },
   {
     label: "Lornat",
     loc: [2446, 3309],
-    pop: "<strong>Lornat</strong> - Rovina Antica",
+    pop: "",
     link: "#"
   },
   {
     label: "Irem",
     loc: [304, 1712],
-    pop: "<strong>Irem</strong> - Rovina Antica",
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Olovar",
+    loc: [498, 988],
+    pop: "",
     link: "#"
   }
 ];

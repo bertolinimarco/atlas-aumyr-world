@@ -258,6 +258,12 @@ let waters_markers = [
     loc: [2022, 290],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Isole di Exus",
+    loc: [1219, 259],
+    pop: "",
+    link: "#"
   }
 ];
 

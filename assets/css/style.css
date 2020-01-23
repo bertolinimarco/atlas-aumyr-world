@@ -248,6 +248,9 @@ img.icon-share-button {
 
 /* Smartphone */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  .leaflet-control-zoom {
+    display: none;
+  }
 }
 
 /* Smartphone Landscape 

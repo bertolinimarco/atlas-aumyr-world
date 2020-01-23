@@ -56,7 +56,7 @@ var baseLayers = {
 // Markers
 var markers = {
   "Regioni<hr>": regions_lg,
-  "Capitali <div class='icon-marker marker-city'></div>": capitals_lg,
+  Capitali: capitals_lg,
   Città: cities_lg,
   Fortezze: keeps_lg,
   Villaggi: villages_lg,
@@ -206,9 +206,8 @@ window.addEventListener("resize", function(event) {
   var width = document.documentElement.clientWidth;
   if (width < 768) {
     map.setZoom(-1);
-    $(".leaflet-control-zoom").css("display", "none");
+    // $(".leaflet-control-zoom").css("display", "none");
   } else {
     map.setZoom(1);
-    $(".leaflet-control-zoom").css("display", "block");
   }
 });

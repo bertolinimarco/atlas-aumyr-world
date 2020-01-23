@@ -125,6 +125,13 @@ let keeps_markers = [
     loc: [1497, 1313],
     pop: "",
     link: "#"
+  },
+  // Other
+  {
+    label: "Exus",
+    loc: [1153, 315],
+    pop: "",
+    link: "#"
   }
 ];
 
