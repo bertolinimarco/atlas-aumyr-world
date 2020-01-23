@@ -117,7 +117,11 @@ map.addControl(
 );
 
 // Control Layers
-L.control.layers(baseLayers, markers, { collapsed: true }).addTo(map);
+L.control
+  .layers(baseLayers, markers, {
+    collapsed: true
+  })
+  .addTo(map);
 
 // Control Zoom
 L.control
@@ -126,12 +130,15 @@ L.control
   })
   .addTo(map);
 
-// Plugin: Enable Hash
+// Plugin: Enable URL Hash
 var hash = new L.Hash(map);
 
 // Plugins: Fullscreen
 map.addControl(
-  new L.Control.Fullscreen({ position: "topleft", title: "Fullscreen" })
+  new L.Control.Fullscreen({
+    position: "topleft",
+    title: "Fullscreen"
+  })
 );
 
 // Plugins: Location Share
@@ -142,35 +149,51 @@ map.addControl(
   })
 );
 
+// Plugin: Marker cluster
+// var clusterGroup = L.markerClusterGroup();
+// clusterGroup.addLayer(cities_lg);
+// clusterGroup.addLayer(villages_lg);
+// clusterGroup.addLayer(keeps_lg);
+// clusterGroup.addLayer(capitals_lg);
+// clusterGroup.addLayer(locations_lg);
+// clusterGroup.addLayer(ruins_lg);
+// clusterGroup.addLayer(roads_lg);
+// clusterGroup.addLayer(forests_lg);
+// clusterGroup.addLayer(waters_lg);
+// clusterGroup.addLayer(hills_lg);
+// clusterGroup.addLayer(mountains_lg);
+// clusterGroup.addLayer(swamps_lg);
+// map.addLayer(clusterGroup);
+
 // Debug: Show popup with coordinates
-var enable_debug = true;
-if (enable_debug == true) {
-  var popup = L.popup();
-  function onMapClick(e) {
-    popup
-      .setLatLng(e.latlng)
-      .setContent("Coordinate: " + e.latlng.toString())
-      .openOn(map);
-  }
-  map.on("click", onMapClick);
-}
+// var enable_debug = false;
+// if (enable_debug == true) {
+//   var popup = L.popup();
+//   function onMapClick(e) {
+//     popup
+//       .setLatLng(e.latlng)
+//       .setContent("Coordinate: " + e.latlng.toString())
+//       .openOn(map);
+//   }
+//   map.on("click", onMapClick);
+// }
 
 // Debug: Draw mode
-var enable_draw = false;
-if (enable_draw == true) {
-  var options = {
-    position: "topleft",
-    drawMarker: true,
-    drawPolyline: true,
-    drawRectangle: true,
-    drawPolygon: true,
-    drawCircle: true,
-    cutPolygon: true,
-    editMode: true,
-    removalMode: true
-  };
-  map.pm.addControls(options);
-}
+// var enable_draw = false;
+// if (enable_draw == true) {
+//   var options = {
+//     position: "topleft",
+//     drawMarker: true,
+//     drawPolyline: true,
+//     drawRectangle: true,
+//     drawPolygon: true,
+//     drawCircle: true,
+//     cutPolygon: true,
+//     editMode: true,
+//     removalMode: true
+//   };
+//   map.pm.addControls(options);
+// }
 
 // //On zoom, show/hide labels
 // var visible;
@@ -185,16 +208,10 @@ if (enable_draw == true) {
 //       tooltip.css("font-size", 0);
 //       break;
 //     case -1:
-//       tooltip.css("font-size", 10);
-//       break;
-//     case 0:
-//       tooltip.css("font-size", 12);
+//       tooltip.css("font-size", 8);
 //       break;
 //     case 1:
 //       tooltip.css("font-size", 14);
-//       break;
-//     case 2:
-//       tooltip.css("font-size", 16);
 //       break;
 //     default:
 //       tooltip.css("font-size", 10);
@@ -202,12 +219,27 @@ if (enable_draw == true) {
 // });
 
 // Responsive
-window.addEventListener("resize", function(event) {
-  var width = document.documentElement.clientWidth;
-  if (width < 768) {
-    map.setZoom(-1);
-    // $(".leaflet-control-zoom").css("display", "none");
-  } else {
-    map.setZoom(1);
-  }
-});
+// window.addEventListener("resize", function(event) {
+//   var width = document.documentElement.clientWidth;
+//   if (width < 768) {
+//     // map.setZoom(-1);
+//     // $(".leaflet-control-zoom").css("display", "none");
+//   } else {
+//     // map.setZoom(1);
+//   }
+// });
+
+// Toggle layer on zoom
+// map.on("zoomend", function() {
+//   var zoomlevel = map.getZoom();
+//   if (zoomlevel <= -1) {
+//     // map.removeLayer(villages_lg);
+//     // // map.addLayer(capitals_lg);
+//     // // map.removeLayer(capitals_lg);
+//   }
+//   if (zoomlevel >= 1) {
+//     // map.addLayer(villages_lg);
+//     // layers
+//   }
+//   console.log("Current Zoom Level =" + zoomlevel);
+// });
