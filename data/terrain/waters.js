@@ -228,6 +228,36 @@ let waters_markers = [
     loc: [2369, 1224],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Fiumi Denteblu",
+    loc: [1860, 489],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiumerosso",
+    loc: [1765, 707],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fiume Moros",
+    loc: [1993, 681],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Golfo di Acquescure",
+    loc: [1675, 654],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Isole dell'Alba",
+    loc: [2022, 290],
+    pop: "",
+    link: "#"
   }
 ];
 

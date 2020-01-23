@@ -78,6 +78,12 @@ let forests_markers = [
     loc: [2325, 1275.5],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Foresta Dorata",
+    loc: [1975, 770],
+    pop: "",
+    link: "#"
   }
 ];
 

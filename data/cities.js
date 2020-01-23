@@ -305,7 +305,26 @@ let cities_markers = [
   },
   {
     label: "Kantias",
-    loc: [1804, 1079],
+    loc: [1799, 1081],
+    pop: "",
+    link: "#"
+  },
+  // Laentas
+  {
+    label: "Yaras",
+    loc: [2056, 619],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Thiros",
+    loc: [1776, 459],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Selvane",
+    loc: [1723, 740],
     pop: "",
     link: "#"
   }

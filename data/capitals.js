@@ -103,6 +103,12 @@ let capitals_markers = [
     loc: [2259, 1126],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Damodar",
+    loc: [1775, 784],
+    pop: "",
+    link: "#"
   }
 ];
 

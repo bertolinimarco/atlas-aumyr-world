@@ -54,6 +54,12 @@ let roads_markers = [
     loc: [1276, 1920],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Ponte Spezzato",
+    loc: [1814, 524],
+    pop: "",
+    link: "#"
   }
 ];
 

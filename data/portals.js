@@ -24,13 +24,13 @@ let portals_markers = [
     loc: [1013, 1294],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Portale di Damodar",
+    loc: [1876, 715],
+    pop: "",
+    link: "#"
   }
-  // {
-  //   label: "Portale di Damodar",
-  //   loc: [731, 4393],
-  //   pop: "",
-  //   link: "#"
-  // },
 ];
 
 for (let i = 0; i < portals_markers.length; i++) {

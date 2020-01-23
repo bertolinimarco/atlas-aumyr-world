@@ -831,6 +831,43 @@ let villages_markers = [
     loc: [1926, 1491],
     pop: "",
     link: "#"
+  },
+  // Laentas
+  {
+    label: "Peaknur",
+    loc: [2113, 549],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Moonborne",
+    loc: [2096, 345],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Sunaras",
+    loc: [1899, 397],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Brownstone",
+    loc: [1891, 620],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Madrask",
+    loc: [1826, 618],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Tahnur",
+    loc: [2056, 755],
+    pop: "",
+    link: "#"
   }
 ];
 
