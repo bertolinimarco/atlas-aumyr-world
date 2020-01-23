@@ -98,6 +98,32 @@ let locations_markers = [
     loc: [1029, 3260],
     pop: "",
     link: "#"
+  },
+  // Merosh
+  {
+    label: "Cascate degli Amanti",
+    loc: [2370, 3467],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Grotte delle Ossa",
+    loc: [2005, 3645],
+    pop: "",
+    link: "#"
+  },
+  // Gwaldur
+  {
+    label: "Pozzo delle Anime",
+    loc: [480, 3028],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Miniere Profonde",
+    loc: [508, 2592],
+    pop: "",
+    link: "#"
   }
 ];
 

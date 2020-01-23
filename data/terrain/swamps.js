@@ -30,6 +30,12 @@ let swamps_markers = [
     loc: [1898, 2728],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Palude del Marshir",
+    loc: [565, 2855],
+    pop: "",
+    link: "#"
   }
 ];
 

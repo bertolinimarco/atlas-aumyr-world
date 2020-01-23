@@ -48,6 +48,18 @@ let forests_markers = [
     loc: [898, 2979],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Foresta Ombrosa",
+    loc: [643, 3291],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Foresta di Ebor",
+    loc: [152, 3145],
+    pop: "",
+    link: "#"
   }
 ];
 

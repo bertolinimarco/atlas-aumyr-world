@@ -555,6 +555,98 @@ let villages_markers = [
     loc: [622, 3806],
     pop: "",
     link: "#"
+  },
+  // Merosh
+  {
+    label: "Nomaders",
+    loc: [2415, 3064],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Searun",
+    loc: [2088, 3021],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Arten",
+    loc: [2476, 3671],
+    pop: "",
+    link: "#"
+  },
+  // Gwaldur
+  {
+    label: "Khem",
+    loc: [575, 3667],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Karduk",
+    loc: [354, 3687],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Pilard",
+    loc: [252, 3759],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Femen",
+    loc: [185, 3548],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Tresdor",
+    loc: [687, 3388],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Jordul",
+    loc: [277, 3371],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Otton",
+    loc: [155, 3251],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Rubel",
+    loc: [351, 3072],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Eukand",
+    loc: [266, 3131],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Vestal",
+    loc: [624, 2744],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Murden",
+    loc: [380, 2671],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Omniros",
+    loc: [490, 2456],
+    pop: "",
+    link: "#"
   }
 ];
 

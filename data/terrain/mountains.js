@@ -54,6 +54,30 @@ let mountains_markers = [
     loc: [1690, 2232],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Passo dei Venti",
+    loc: [2066, 3685],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Picchi di Kaphnur",
+    loc: [588, 3960],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Sorgenti del Magma",
+    loc: [405, 3817],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Monte Atros",
+    loc: [697, 2722],
+    pop: "",
+    link: "#"
   }
 ];
 

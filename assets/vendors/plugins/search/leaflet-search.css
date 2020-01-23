@@ -97,7 +97,6 @@
   border-radius: 0.25em;
   text-decoration: none;
   white-space: nowrap;
-  vertical-align: center;
 }
 .leaflet-control-search .search-button:hover {
   background-color: #f4f4f4;
@@ -168,7 +167,6 @@
   border-radius: 0.25em;
   text-decoration: none;
   white-space: nowrap;
-  vertical-align: center;
 }
 .leaflet-control-search .search-tip .climbo-icon-mini {
   float: right;

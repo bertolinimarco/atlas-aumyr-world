@@ -61,6 +61,18 @@ let capitals_markers = [
     loc: [1498, 3070],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Veloras",
+    loc: [2362, 3425],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Kaphnur",
+    loc: [464, 3883],
+    pop: "",
+    link: "#"
   }
 ];
 

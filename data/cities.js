@@ -201,6 +201,31 @@ let cities_markers = [
     loc: [748, 2965],
     pop: "",
     link: "#"
+  },
+  // Gwaldur
+  {
+    label: "Zarhia",
+    loc: [468, 3612],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Vardanos",
+    loc: [450, 3239],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Eathos",
+    loc: [70, 3192],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Nur-Batosh",
+    loc: [396, 2940],
+    pop: "",
+    link: "#"
   }
 ];
 

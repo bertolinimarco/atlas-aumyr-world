@@ -36,6 +36,24 @@ let hills_markers = [
     loc: [831, 3658],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Pianure del Riposo",
+    loc: [2056, 3457],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Colline di Thomulard",
+    loc: [2181, 2963],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Colline Mantogrigio",
+    loc: [2284, 3264],
+    pop: "",
+    link: "#"
   }
 ];
 

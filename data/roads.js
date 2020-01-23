@@ -30,6 +30,18 @@ let roads_markers = [
     loc: [1712, 3492.5],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Ponte Orros",
+    loc: [2021, 2639.5],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Strada del Sud",
+    loc: [608, 2572],
+    pop: "",
+    link: "#"
   }
 ];
 

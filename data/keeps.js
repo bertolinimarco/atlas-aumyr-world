@@ -67,6 +67,19 @@ let keeps_markers = [
     loc: [776, 3593],
     pop: "",
     link: "#"
+  },
+  // Gwaldur
+  {
+    label: "Torre di Morganis",
+    loc: [569, 4075],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Fortezza di Oduur",
+    loc: [455, 2767],
+    pop: "",
+    link: "#"
   }
 ];
 

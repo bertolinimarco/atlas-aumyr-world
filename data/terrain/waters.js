@@ -144,6 +144,30 @@ let waters_markers = [
     loc: [1192, 3046],
     pop: "",
     link: "#"
+  },
+  {
+    label: "Baia del Drago",
+    loc: [300, 3470],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Lagoprofondo",
+    loc: [333, 3178],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Costa del Riposo",
+    loc: [269, 2877],
+    pop: "",
+    link: "#"
+  },
+  {
+    label: "Golfo della Visione",
+    loc: [427, 2527],
+    pop: "",
+    link: "#"
   }
 ];
 
