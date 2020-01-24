@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <title>Aumyr - Aumyr Atlas</title>
+    <title>Atanis - Aumyr Atlas</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,10 +83,10 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Google Fonts -->
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Asul:400,700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <!-- CSS: Leaflet -->
     <link rel="stylesheet" href="/assets/vendors/leaflet/leaflet.css" />
@@ -121,6 +121,11 @@
     <!-- CSS: Globals -->
     <link rel="stylesheet" href="/assets/css/style.css" />
 
+    <!-- <style>
+      * {
+        font-family: "Asul", sans-serif;
+      }
+    </style> -->
   </head>
 
   <body>
@@ -154,29 +159,12 @@
     <!-- Leaflet Markers: Icons -->
     <script src="/src/icons.js"></script>
 
-    <!-- Leaflet Markers: Terrain -->
-    <script src="/data/aumyr/terrain/mountains.js"></script>
-    <script src="/data/aumyr/terrain/islands.js"></script>
-    <script src="/data/aumyr/terrain/waters.js"></script>
-    <script src="/data/aumyr/terrain/hills.js"></script>
-    <script src="/data/aumyr/terrain/forests.js"></script>
-    <script src="/data/aumyr/terrain/deserts.js"></script>
-    <script src="/data/aumyr/terrain/swamps.js"></script>
-
-    <!-- Leaflet Markers: POIs -->
-    <script src="/data/aumyr/roads.js"></script>
-    <script src="/data/aumyr/regions.js"></script>
-    <script src="/data/aumyr/capitals.js"></script>
-    <script src="/data/aumyr/cities.js"></script>
-    <script src="/data/aumyr/keeps.js"></script>
-    <script src="/data/aumyr/villages.js"></script>
-    <script src="/data/aumyr/ruins.js"></script>
-    <script src="/data/aumyr/locations.js"></script>
-    <script src="/data/aumyr/observatories.js"></script>
-    <script src="/data/aumyr/portals.js"></script>
+    <!-- Leaflet Markers -->
+    <script src="/data/aumyr/capitals/atanis/districts.js"></script>
+    <script src="/data/aumyr/capitals/atanis/pois.js"></script>
 
     <!-- Leaflet: Init -->
-    <script src="/src/map.js"></script>
+    <script src="/src/capitals/atanis.js"></script>
 
     <script>
       $(function() {

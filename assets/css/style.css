@@ -1,7 +1,9 @@
+* {
+  font-family: "Asul", sans-serif;
+}
 html,
 body {
   margin: 0;
-  /* font-family: "Asul", sans-serif; */
 }
 
 a {
@@ -35,6 +37,38 @@ a:hover {
 .section.section-footer p {
   font-size: 11px;
   color: #ccc;
+}
+
+.section-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 999;
+}
+.section-head a {
+  background: #fff;
+  padding: 3px;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* .section-foot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+} */
+
+.leaflet-control.leaflet-control-search {
+  position: fixed;
+  left: 0;
+  top: 45px;
 }
 
 /* Flags */
@@ -123,9 +157,21 @@ img.icon-share-button {
   font-weight: bold;
   background: rgba(255, 255, 255, 0.6);
 }
+.leaflet-tooltip.district-tooltip {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  color: #000;
+  padding: 4px 8px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.6);
+}
 
 /* Markers: Region Tooltip disable arrow top */
 .leaflet-tooltip.region-tooltip:before {
+  display: none;
+}
+.leaflet-tooltip.district-tooltip:before {
   display: none;
 }
 
@@ -138,9 +184,9 @@ img.icon-share-button {
 .region {
   fill: rgba(255, 255, 255, 0.6);
 }
-.region.region-Nordavind {
+/* .region.region-Nordavind {
   fill: rgba(255, 255, 255, 0.6);
-}
+} */
 
 /* Markers > Icons */
 .leaflet-marker-icon.no-icon {
@@ -153,8 +199,8 @@ img.icon-share-button {
   background: transparent;
   border: 0;
   box-shadow: none;
-  color: #000;
-  text-shadow: 0 0 2px #ffffff;
+  color: #fff;
+  text-shadow: 0 0 2px #776952;
   font-weight: bold;
 }
 .leaflet-tooltip.label-mountains {
@@ -163,7 +209,7 @@ img.icon-share-button {
   border: 0;
   box-shadow: none;
   color: #fff;
-  text-shadow: 0 0 2px #7a0000;
+  text-shadow: 0 0 2px #a30000;
   font-weight: bold;
 }
 .leaflet-tooltip.label-waters {

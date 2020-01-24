@@ -169,3 +169,24 @@ var marker_icon_hills = L.icon({
   popupAnchor: [1, -34],
   tooltipAnchor: [16, -28]
 });
+
+// Cities
+var marker_icon_district = L.icon({
+  className: "icon-district no-icon",
+  iconUrl: "/assets/img/green-marker-icon.png",
+  iconRetinaUrl: "/assets/img/green-marker-icon-2x.png",
+  iconSize: [25, 41],
+  iconAnchor: [16, 35],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28]
+});
+
+var marker_icon_poi = L.icon({
+  className: "icon-poi",
+  iconUrl: "/assets/img/green-marker-icon.png",
+  iconRetinaUrl: "/assets/img/green-marker-icon-2x.png",
+  iconSize: [25, 41],
+  iconAnchor: [16, 35],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28]
+});

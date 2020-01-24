@@ -17,30 +17,12 @@ var map = L.map("map", {
   maxZoom: 1,
   zoomControl: false,
   attributionControl: false,
-  layers: [
-    landMap,
-    roads_lg,
-    mountains_lg,
-    islands_lg,
-    waters_lg,
-    hills_lg,
-    forests_lg,
-    deserts_lg,
-    swamps_lg
-    // capitals_lg,
-    // cities_lg,
-    // keeps_lg,
-    // villages_lg,
-    // ruins_lg,
-    // locations_lg,
-    // observatories_lg,
-    // portals_lg
-  ]
+  layers: [landMap, districts_lg, pois_lg]
 });
 
 var bounds = [
   [0, 0],
-  [3200, 4800]
+  [2800, 2800]
 ];
 
 map.fitBounds(bounds);
@@ -56,40 +38,17 @@ var baseLayers = {
 
 // Markers
 var markers = {
-  Regioni: regions_lg
-  // Capitali: capitals_lg,
-  // Città: cities_lg,
-  // Fortezze: keeps_lg,
-  // Villaggi: villages_lg,
-  // Luoghi: locations_lg,
-  // Osservatori: observatories_lg,
-  // Portali: portals_lg,
-  // Rovine: ruins_lg
+  Distretti: districts_lg,
+  Luoghi: pois_lg
 };
 
 // Init base Map
-var aumyrBaseMap = L.imageOverlay("/data/maps/aumyr-min.jpg", bounds).addTo(
+var aumyrBaseMap = L.imageOverlay("/data/maps/cities/atanis.jpg", bounds).addTo(
   map
 );
 
 // Concat Markers for search
-var allMarkers = villages_markers.concat(
-  roads_markers,
-  mountains_markers,
-  islands_markers,
-  waters_markers,
-  hills_markers,
-  forests_markers,
-  deserts_markers,
-  swamps_markers,
-  capitals_markers,
-  cities_markers,
-  keeps_markers,
-  ruins_markers,
-  locations_markers,
-  observatories_markers,
-  portals_markers
-);
+var allMarkers = districts_markers.concat(pois_markers);
 
 // console.table(allMarkers);
 
@@ -151,23 +110,13 @@ map.addControl(
 );
 
 // Plugin: Marker cluster
-var clusterGroup = L.markerClusterGroup({});
-clusterGroup.addLayer(cities_lg);
-clusterGroup.addLayer(villages_lg);
-clusterGroup.addLayer(keeps_lg);
-clusterGroup.addLayer(capitals_lg);
-clusterGroup.addLayer(locations_lg);
-clusterGroup.addLayer(ruins_lg);
-// clusterGroup.addLayer(roads_lg);
-// clusterGroup.addLayer(forests_lg);
-// clusterGroup.addLayer(waters_lg);
-// clusterGroup.addLayer(hills_lg);
-// clusterGroup.addLayer(mountains_lg);
-// clusterGroup.addLayer(swamps_lg);
-map.addLayer(clusterGroup);
+// var clusterGroup = L.markerClusterGroup();
+// clusterGroup.addLayer(districts_lg);
+// clusterGroup.addLayer(pois_lg);
+// map.addLayer(clusterGroup);
 
 // Debug: Show popup with coordinates
-// var enable_debug = false;
+// var enable_debug = true;
 // if (enable_debug == true) {
 //   var popup = L.popup();
 //   function onMapClick(e) {
@@ -180,7 +129,7 @@ map.addLayer(clusterGroup);
 // }
 
 // Debug: Draw mode
-// var enable_draw = false;
+// var enable_draw = true;
 // if (enable_draw == true) {
 //   var options = {
 //     position: "topleft",
@@ -200,24 +149,24 @@ map.addLayer(clusterGroup);
 // var visible;
 
 // // Change Tooltip size on zoom
-map.on("zoom", function() {
-  var zoomLevel = map.getZoom();
-  var tooltip = $(".leaflet-tooltip.leaflet-tooltip-center");
+// map.on("zoom", function() {
+//   var zoomLevel = map.getZoom();
+//   var tooltip = $(".leaflet-tooltip");
 
-  switch (zoomLevel) {
-    case -2:
-      tooltip.css("font-size", 0);
-      break;
-    case -1:
-      tooltip.css("font-size", 10);
-      break;
-    case 1:
-      tooltip.css("font-size", 14);
-      break;
-    default:
-      tooltip.css("font-size", 14);
-  }
-});
+//   switch (zoomLevel) {
+//     case -2:
+//       tooltip.css("font-size", 0);
+//       break;
+//     case -1:
+//       tooltip.css("font-size", 8);
+//       break;
+//     case 1:
+//       tooltip.css("font-size", 14);
+//       break;
+//     default:
+//       tooltip.css("font-size", 10);
+//   }
+// });
 
 // Responsive
 // window.addEventListener("resize", function(event) {
