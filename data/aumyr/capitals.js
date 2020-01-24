@@ -46,7 +46,7 @@ let capitals_markers = [
   {
     label: "Atanis",
     loc: [2462, 2254],
-    pop: "Vai alla città",
+    pop: "bla bla",
     link: "/it/atanis.html"
   },
   {
@@ -117,9 +117,9 @@ for (let i = 0; i < capitals_markers.length; i++) {
   }).addTo(capitals_lg);
   marker.bindPopup(
     capitals_markers[i].pop +
-      '<hr><a href="' +
+      '<hr><a class="btn btn-primary btn-sm" href="' +
       capitals_markers[i].link +
-      '" target="_blank" rel="noopener">Leggi di più su ' +
+      '" rel="noopener">Apri la mappa di ' +
       capitals_markers[i].label +
       "</a>"
   );

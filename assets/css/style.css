@@ -50,9 +50,8 @@ a:hover {
 .section-head a {
   background: #fff;
   padding: 3px;
-  width: 26px;
-  height: 26px;
-  line-height: 26px;
+  width: 36px;
+  height: 36px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: inline-block;
@@ -127,14 +126,18 @@ a:hover {
 }
 img.icon-share-button {
   max-height: 19px;
-  top: 3px;
+  top: -1px;
   position: relative;
 }
 
 /* Leaflet Popup */
 .leaflet-popup-content {
-  padding: 12px 18px;
+  padding: 8px 12px;
   margin: 0;
+}
+
+.leaflet-container a.btn.btn-primary {
+  color: #fff;
 }
 
 .leaflet-container a.leaflet-popup-close-button {
@@ -144,6 +147,7 @@ img.icon-share-button {
   padding: 2px 1px 3px 0;
   background: #fff;
   border-radius: 100%;
+  height: 18px;
   box-shadow: 0 0px 9px rgba(0, 0, 0, 0.4);
 }
 
@@ -276,6 +280,7 @@ img.icon-share-button {
   margin: 1px 0 1px;
   padding: 7px 9px;
   min-width: 180px;
+  font-size: 16px;
   border-radius: 0;
 }
 
@@ -284,7 +289,8 @@ img.icon-share-button {
   height: auto;
   outline: none;
   border: 0;
-  padding: 7px 36px 7px 9px;
+  padding: 4px 36px 4px 9px;
+  font-size: 16px;
 }
 
 /* Location Share fix */
@@ -292,10 +298,24 @@ img.icon-share-button {
   display: none;
 }
 
+.leaflet-control-search .search-tooltip {
+  max-height: 240px;
+}
+
+.marker-cluster div {
+  font-weight: bold;
+}
+
 /* Smartphone */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   .leaflet-control-zoom {
     display: none;
+  }
+  .leaflet-control-search .search-tip {
+    font-size: 14px;
+  }
+  .leaflet-control-search .search-input {
+    font-size: 14px;
   }
 }
 

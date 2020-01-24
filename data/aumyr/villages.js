@@ -277,18 +277,6 @@ let villages_markers = [
     link: "#"
   },
   {
-    label: "Fieldgrave",
-    loc: [1348, 4454],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Fieldgrave",
-    loc: [1348, 4454],
-    pop: "",
-    link: "#"
-  },
-  {
     label: "Bhalair",
     loc: [1002, 4487],
     pop: "",

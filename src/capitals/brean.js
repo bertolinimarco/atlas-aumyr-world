@@ -116,17 +116,17 @@ map.addControl(
 // map.addLayer(clusterGroup);
 
 // Debug: Show popup with coordinates
-var enable_debug = true;
-if (enable_debug == true) {
-  var popup = L.popup();
-  function onMapClick(e) {
-    popup
-      .setLatLng(e.latlng)
-      .setContent("Coordinate: " + e.latlng.toString())
-      .openOn(map);
-  }
-  map.on("click", onMapClick);
-}
+// var enable_debug = true;
+// if (enable_debug == true) {
+//   var popup = L.popup();
+//   function onMapClick(e) {
+//     popup
+//       .setLatLng(e.latlng)
+//       .setContent("Coordinate: " + e.latlng.toString())
+//       .openOn(map);
+//   }
+//   map.on("click", onMapClick);
+// }
 
 // Debug: Draw mode
 // var enable_draw = true;
