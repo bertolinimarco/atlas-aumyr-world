@@ -138,7 +138,7 @@ map.addControl(
 // Control Layers
 L.control
   .layers(baseLayers, markers, {
-    collapsed: false
+    collapsed: true
   })
   .addTo(map);
 
