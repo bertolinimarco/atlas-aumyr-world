@@ -39,35 +39,15 @@ a:hover {
   color: #ccc;
 }
 
-.section-head {
-  position: fixed;
+.nav-menu img {
+  max-width: 25px;
+}
+
+.leaflet-control-layers label {
+  margin: 3px;
+}
+.leaflet-control-layers-selector {
   top: 0;
-  left: 0;
-  margin-left: 10px;
-  margin-top: 10px;
-  z-index: 999;
-}
-.section-head a {
-  background: #fff;
-  padding: 3px;
-  width: 36px;
-  height: 36px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: inline-block;
-}
-
-/* .section-foot {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 999;
-} */
-
-.leaflet-control.leaflet-control-search {
-  position: fixed;
-  left: 0;
-  top: 45px;
 }
 
 /* Flags */

@@ -46,8 +46,8 @@ let capitals_markers = [
   {
     label: "Atanis",
     loc: [2462, 2254],
-    pop: "bla bla",
-    link: "/it/atanis.html"
+    pop: "",
+    link: "#"
   },
   {
     label: "Feldris",
@@ -115,14 +115,14 @@ for (let i = 0; i < capitals_markers.length; i++) {
   marker = L.marker(capitals_markers[i].loc, {
     icon: marker_icon_capital
   }).addTo(capitals_lg);
-  marker.bindPopup(
-    capitals_markers[i].pop +
-      '<hr><a class="btn btn-primary btn-sm" href="' +
-      capitals_markers[i].link +
-      '" rel="noopener">Apri la mappa di ' +
-      capitals_markers[i].label +
-      "</a>"
-  );
+  // marker.bindPopup(
+  //   capitals_markers[i].pop +
+  //     '<hr><a class="btn btn-primary btn-sm" href="' +
+  //     capitals_markers[i].link +
+  //     '" rel="noopener">Apri la mappa di ' +
+  //     capitals_markers[i].label +
+  //     "</a>"
+  // );
   marker.bindTooltip(capitals_markers[i].label, {
     // permanent: true,
     direction: "bottom"

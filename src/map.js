@@ -26,15 +26,15 @@ var map = L.map("map", {
     hills_lg,
     forests_lg,
     deserts_lg,
-    swamps_lg
-    // capitals_lg,
-    // cities_lg,
-    // keeps_lg,
-    // villages_lg,
-    // ruins_lg,
-    // locations_lg,
-    // observatories_lg,
-    // portals_lg
+    swamps_lg,
+    capitals_lg,
+    cities_lg,
+    keeps_lg,
+    villages_lg,
+    ruins_lg,
+    locations_lg,
+    observatories_lg,
+    portals_lg
   ]
 });
 
@@ -56,15 +56,15 @@ var baseLayers = {
 
 // Markers
 var markers = {
-  Regioni: regions_lg
-  // Capitali: capitals_lg,
-  // Città: cities_lg,
-  // Fortezze: keeps_lg,
-  // Villaggi: villages_lg,
-  // Luoghi: locations_lg,
-  // Osservatori: observatories_lg,
-  // Portali: portals_lg,
-  // Rovine: ruins_lg
+  Regioni: regions_lg,
+  Capitali: capitals_lg,
+  Città: cities_lg,
+  Fortezze: keeps_lg,
+  Villaggi: villages_lg,
+  Luoghi: locations_lg,
+  Osservatori: observatories_lg,
+  Portali: portals_lg,
+  Rovine: ruins_lg
 };
 
 // Init base Map
@@ -93,6 +93,16 @@ var allMarkers = villages_markers.concat(
 
 // console.table(allMarkers);
 
+// Easybutton: hellow
+// var btnHello = L.popup().setContent("Hello World!");
+
+// L.easyButton(
+//   '<div class="nav-menu"><img src="/assets/img/logo-aumyr-atlas.svg"></div>',
+//   function(btn, map) {
+//     alert("hello");
+//   }
+// ).addTo(map);
+
 // Search
 function getAllData(text, callResponse) {
   callResponse(allMarkers);
@@ -117,10 +127,18 @@ map.addControl(
   })
 );
 
+// Filter
+// L.control
+//   .tagFilterButton({
+//     data: ["montagne", "nord"],
+//     filterOnEveryClick: true
+//   })
+//   .addTo(map);
+
 // Control Layers
 L.control
   .layers(baseLayers, markers, {
-    collapsed: true
+    collapsed: false
   })
   .addTo(map);
 
@@ -151,20 +169,20 @@ map.addControl(
 );
 
 // Plugin: Marker cluster
-var clusterGroup = L.markerClusterGroup({});
-clusterGroup.addLayer(cities_lg);
-clusterGroup.addLayer(villages_lg);
-clusterGroup.addLayer(keeps_lg);
-clusterGroup.addLayer(capitals_lg);
-clusterGroup.addLayer(locations_lg);
-clusterGroup.addLayer(ruins_lg);
-// clusterGroup.addLayer(roads_lg);
-// clusterGroup.addLayer(forests_lg);
-// clusterGroup.addLayer(waters_lg);
-// clusterGroup.addLayer(hills_lg);
-// clusterGroup.addLayer(mountains_lg);
-// clusterGroup.addLayer(swamps_lg);
-map.addLayer(clusterGroup);
+// var clusterGroup = L.markerClusterGroup({});
+// clusterGroup.addLayer(cities_lg);
+// clusterGroup.addLayer(villages_lg);
+// clusterGroup.addLayer(keeps_lg);
+// clusterGroup.addLayer(capitals_lg);
+// clusterGroup.addLayer(locations_lg);
+// clusterGroup.addLayer(ruins_lg);
+// // clusterGroup.addLayer(roads_lg);
+// // clusterGroup.addLayer(forests_lg);
+// // clusterGroup.addLayer(waters_lg);
+// // clusterGroup.addLayer(hills_lg);
+// // clusterGroup.addLayer(mountains_lg);
+// // clusterGroup.addLayer(swamps_lg);
+// map.addLayer(clusterGroup);
 
 // Debug: Show popup with coordinates
 // var enable_debug = false;
