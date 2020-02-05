@@ -50,6 +50,21 @@ a:hover {
   top: 0;
 }
 
+.leaflet-popup-content .card-body .link-text {
+  color: #775200;
+  display: inline-block;
+  width: 100%;
+  margin-top: 4px;
+  font-weight: bold;
+}
+.leaflet-popup-content .card-body .link-text:first-child {
+  margin-top: 5px !important;
+}
+
+.leaflet-popup-content .card.is-ruin:before {
+  content: "";
+}
+
 /* Flags */
 .flag {
   width: 60px;
@@ -110,17 +125,137 @@ img.icon-share-button {
   position: relative;
 }
 
-/* Leaflet Popup */
-.leaflet-popup-content {
-  padding: 8px 12px;
-  margin: 0;
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.icon-aw {
+  background-image: url(/assets/img/logo-aumyr-atlas.svg);
+}
+.icon-map {
+  background-image: url(/assets/icons/icon-map.svg);
 }
 
+/* Cards */
+.card .card-bg .card-overlay {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+
+/* Leaflet Popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 0.25rem;
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  overflow: hidden;
+}
+.leaflet-popup-content .card {
+  display: inline-block;
+  border: 0;
+  min-width: 287px;
+}
+.leaflet-popup-content .card.is-message {
+  min-width: initial;
+}
+.leaflet-popup-content .card .card-body {
+  padding: 12px;
+}
+.leaflet-popup-content .card .card-bg {
+  height: 160px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.leaflet-popup-content a.badge {
+  position: absolute;
+  bottom: 5px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.leaflet-popup-content .badge-left + .badge-left {
+  margin-left: 90px;
+}
+.leaflet-popup-content .badge.badge-right {
+  right: 5px;
+  background: transparent;
+  opacity: 0.6;
+}
+.leaflet-popup-content .badge.badge-left {
+  left: 5px;
+  background: rgba(255, 255, 255, 0.3) !important;
+  color: #fff;
+  padding: 7px 9px;
+  color: #fff;
+  font-size: 12px;
+}
+.leaflet-popup-content .badge.badge-left:hover {
+  left: 5px;
+  background: #000 !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  padding: 0;
+}
+
+.leaflet-popup-content {
+  padding: 0;
+  margin: 0;
+}
+.leaflet-popup-content h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.leaflet-popup-content p {
+  margin: 0;
+}
+.leaflet-popup-content .read-more {
+  margin-top: 8px;
+  display: inline-block;
+  color: #775200;
+}
+.leaflet-popup-content hr {
+  margin: 8px 0 0;
+  border: 0;
+}
 .leaflet-container a.btn.btn-primary {
   color: #fff;
 }
 
 .leaflet-container a.leaflet-popup-close-button {
+  display: none;
   position: absolute;
   top: -10px;
   right: -9px;
@@ -273,6 +408,17 @@ img.icon-share-button {
   font-size: 16px;
 }
 
+/* Measure */
+.leaflet-control-measure-on a,
+.leaflet-control-measure-on a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.leaflet-measure-tooltip-total {
+  font-size: 14px;
+}
+
 /* Location Share fix */
 .leaflet-bottom.leaflet-left {
   display: none;
@@ -288,9 +434,6 @@ img.icon-share-button {
 
 /* Smartphone */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
-  .leaflet-control-zoom {
-    display: none;
-  }
   .leaflet-control-search .search-tip {
     font-size: 14px;
   }

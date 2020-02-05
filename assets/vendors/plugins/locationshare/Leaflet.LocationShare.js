@@ -3,23 +3,25 @@ var LS = L.LocShare;
 LS.Send = {};
 LS.Send.Marker = {};
 LS.Send.Popup = L.popup().setContent(
-  '<div><input id="sendText" type="text" class="location-share" size="30" onkeyup="L.LocShare.Send.UpdateMessage( this )" placeholder="Messaggio"/></div><div style="height:35px;"><button class="location-share-btn" onclick="copyPrompt()">Crea Link</button></div></div>'
+  '<div class="card"><div class="card-body"><input class="form-control" id="sendText" type="text" class="location-share" size="30" onkeyup="L.LocShare.Send.UpdateMessage( this )" placeholder="Messaggio"/><button class="btn btn-primary btn-sm btn-block location-share-btn" onclick="copyPrompt()">Crea Link</button></div></div>'
 );
 LS.Receive = {};
 LS.Receive.Marker = {};
 LS.Receive.Popup = L.popup();
 var sendIcon = L.icon({
-  iconUrl: "/assets/img/icon-share-send.png",
-  iconSize: [32, 37], // size of the icon
-  iconAnchor: [25, 32], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, -30] // point from which the popup should open relative to the iconAnchor
+  iconUrl: "/assets/markers/icon-share-send.png",
+  iconSize: [34, 41],
+  iconAnchor: [16, 35],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28]
 });
 
 receiveIcon = L.icon({
-  iconUrl: "/assets/img/icon-share-receive.png",
-  iconSize: [32, 37], // size of the icon
-  iconAnchor: [25, 32], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, -30] // point from which the popup should open relative to the iconAnchor
+  iconUrl: "/assets/markers/icon-share-receive.png",
+  iconSize: [34, 41],
+  iconAnchor: [16, 35],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28]
 });
 
 L.Map.addInitHook(function() {
@@ -41,9 +43,12 @@ L.Control.ShareLocation = L.Control.extend({
 
     this.link = L.DomUtil.create("a", "leaflet-bar-part", container);
     this.link.title = this.options.title;
-    var userIcon = L.DomUtil.create("img", "img-responsive icon-share-button", this.link);
-    userIcon.src =
-      "/assets/img/icon-share-button.png";
+    var userIcon = L.DomUtil.create(
+      "img",
+      "img-responsive icon-share-button",
+      this.link
+    );
+    userIcon.src = "/assets/markers/icon-share-button.png";
     this.link.href = "#";
 
     L.DomEvent.on(this.link, "click", this._click, this);
@@ -75,12 +80,16 @@ populateMarker = function(selectedMap) {
       "</p><p>Lng: " +
       LS.Receive.lng +
       "</p></td></tr></table>";
-    //    LS.Receive.Popup.setContent(LS.Receive.message)
+    // LS.Receive.Popup.setContent(LS.Receive.message);
     LS.Receive.Marker = L.marker([LS.Receive.lat, LS.Receive.lng], {
       icon: receiveIcon
     });
     console.log(LS.Receive.Marker._latlng);
-    LS.Receive.Marker.bindPopup(LS.Receive.message);
+    LS.Receive.Marker.bindPopup(
+      "<div class='card is-message'><div class='card-body'>" +
+        LS.Receive.message +
+        "</div></div>"
+    );
     LS.Receive.Marker.addTo(selectedMap);
     LS.Receive.Marker.openPopup();
   }

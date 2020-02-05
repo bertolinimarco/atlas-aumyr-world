@@ -90,9 +90,7 @@
 
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+      href="/assets/vendors/bootstrap/css/bootstrap.min.css"
     />
 
     <!-- CSS: Leaflet -->
@@ -116,23 +114,20 @@
       href="/assets/vendors/plugins/fullscreen/leaflet.fullscreen.css"
     />
 
-    <link
+    <!-- Leaflet Plugins: Marker Cluster -->
+    <!-- <link
       rel="stylesheet"
       href="/assets/vendors/plugins/markercluster/MarkerCluster.css"
     />
     <link
       rel="stylesheet"
       href="/assets/vendors/plugins/markercluster/MarkerCluster.Default.css"
-    />
+    /> -->
 
+    <!-- Leaflet Plugins: EasyButton -->
     <link
       rel="stylesheet"
       href="/assets/vendors/plugins/easybutton/easy-button.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="/assets/vendors/plugins/tagfilter/leaflet-tag-filter-button.css"
     />
 
     <!-- CSS: Globals -->
@@ -145,25 +140,14 @@
     <!-- jQuery -->
     <script src="/assets/vendors/jquery/jquery-3.4.1.min.js"></script>
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap -->
+    <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Leaflet -->
     <script src="/assets/vendors/leaflet/leaflet.js"></script>
 
     <!-- Leaflet Plugins: Easy Button -->
     <script src="/assets/vendors/plugins/easybutton/easy-button.js"></script>
-
-    <!-- Leaflet Plugins: Tag Filter -->
-    <script src="/assets/vendors/plugins/tagfilter/leaflet-tag-filter-button.js"></script>
 
     <!-- Leaflet Plugins: Location Share -->
     <script src="/assets/vendors/plugins/locationshare/Leaflet.LocationShare.js"></script>
@@ -181,43 +165,33 @@
     <script src="/assets/vendors/plugins/fullscreen/Leaflet.fullscreen.min.js"></script>
 
     <!-- Leaflet Plugins: Marker Cluster -->
-    <script src="/assets/vendors/plugins/markercluster/leaflet.markercluster.js"></script>
+    <!-- <script src="/assets/vendors/plugins/markercluster/leaflet.markercluster.js"></script> -->
 
     <!-- Leaflet Markers: Icons -->
-    <script src="/src/icons.js"></script>
+    <script src="/it/data/aumyr/src/icons.js"></script>
 
     <!-- Leaflet Markers: Terrain -->
-    <script src="/data/aumyr/terrain/mountains.js"></script>
-    <script src="/data/aumyr/terrain/islands.js"></script>
-    <script src="/data/aumyr/terrain/waters.js"></script>
-    <script src="/data/aumyr/terrain/hills.js"></script>
-    <script src="/data/aumyr/terrain/forests.js"></script>
-    <script src="/data/aumyr/terrain/deserts.js"></script>
-    <script src="/data/aumyr/terrain/swamps.js"></script>
+    <script src="/it/data/aumyr/terrain/mountains.js"></script>
+    <script src="/it/data/aumyr/terrain/islands.js"></script>
+    <script src="/it/data/aumyr/terrain/waters.js"></script>
+    <script src="/it/data/aumyr/terrain/hills.js"></script>
+    <script src="/it/data/aumyr/terrain/forests.js"></script>
+    <script src="/it/data/aumyr/terrain/deserts.js"></script>
+    <script src="/it/data/aumyr/terrain/swamps.js"></script>
 
     <!-- Leaflet Markers: POIs -->
-    <script src="/data/aumyr/roads.js"></script>
-    <script src="/data/aumyr/regions.js"></script>
-    <script src="/data/aumyr/capitals.js"></script>
-    <script src="/data/aumyr/cities.js"></script>
-    <script src="/data/aumyr/keeps.js"></script>
-    <script src="/data/aumyr/villages.js"></script>
-    <script src="/data/aumyr/ruins.js"></script>
-    <script src="/data/aumyr/locations.js"></script>
-    <script src="/data/aumyr/observatories.js"></script>
-    <script src="/data/aumyr/portals.js"></script>
+    <script src="/it/data/aumyr/roads.js"></script>
+    <script src="/it/data/aumyr/regions.js"></script>
+    <script src="/it/data/aumyr/capitals.js"></script>
+    <script src="/it/data/aumyr/cities.js"></script>
+    <script src="/it/data/aumyr/keeps.js"></script>
+    <script src="/it/data/aumyr/villages.js"></script>
+    <script src="/it/data/aumyr/ruins.js"></script>
+    <script src="/it/data/aumyr/locations.js"></script>
+    <script src="/it/data/aumyr/observatories.js"></script>
+    <script src="/it/data/aumyr/portals.js"></script>
 
     <!-- Leaflet: Init -->
-    <script src="/src/map.js"></script>
-
-    <script>
-      $(function() {
-        var includes = $("[data-include]");
-        jQuery.each(includes, function() {
-          var file = "/it/inc/" + $(this).data("include") + ".html";
-          $(this).load(file);
-        });
-      });
-    </script>
+    <script src="/it/data/aumyr/src/map.js"></script>
   </body>
 </html>
