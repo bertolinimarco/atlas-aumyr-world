@@ -3,7 +3,7 @@ var LS = L.LocShare;
 LS.Send = {};
 LS.Send.Marker = {};
 LS.Send.Popup = L.popup().setContent(
-  '<div class="card"><div class="card-body"><input class="form-control" id="sendText" type="text" class="location-share" size="30" onkeyup="L.LocShare.Send.UpdateMessage( this )" placeholder="Messaggio"/><button class="btn btn-primary btn-sm btn-block location-share-btn" onclick="copyPrompt()">Crea Link</button></div></div>'
+  '<div class="card"><div class="card-body"><input class="form-control" id="sendText" type="text" class="location-share" size="30" onkeyup="L.LocShare.Send.UpdateMessage( this )" placeholder=""/><button class="btn btn-primary btn-sm btn-block location-share-btn" onclick="copyPrompt()">Link</button></div></div>'
 );
 LS.Receive = {};
 LS.Receive.Marker = {};
@@ -113,7 +113,7 @@ function getJsonFromUrl() {
 
 function copyPrompt() {
   window.prompt(
-    "Copia questo link e invialo:",
+    "Copy:",
     "" +
       location.origin +
       location.pathname +
