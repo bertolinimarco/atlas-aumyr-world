@@ -242,7 +242,7 @@ for (let i = 0; i < keeps_markers.length; i++) {
       keeps_markers[i].pop +
       "</p><a href='" +
       keeps_markers[i].link +
-      "' class='link-text' target='_blank'>Continua su aumyr.world</a></div>"
+      "' class='link-text' target='_blank'>Read more on aumyr.world</a></div>"
   );
   marker.bindTooltip(keeps_markers[i].label, {
     // permanent: true,

@@ -266,7 +266,7 @@ for (let i = 0; i < locations_markers.length; i++) {
       locations_markers[i].pop +
       "</p><a href='" +
       locations_markers[i].link +
-      "' class='link-text' target='_blank'>Continua su aumyr.world</a></div>"
+      "' class='link-text' target='_blank'>Read more on aumyr.world</a></div>"
   );
   marker.bindTooltip(locations_markers[i].label, {
     // permanent: true,

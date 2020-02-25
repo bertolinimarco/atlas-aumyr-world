@@ -123,7 +123,7 @@ for (let i = 0; i < ruins_markers.length; i++) {
       ruins_markers[i].pop +
       "</p><a href='" +
       ruins_markers[i].link +
-      "' class='link-text' target='_blank'>Continua su aumyr.world</a></div>"
+      "' class='link-text' target='_blank'>Read more on aumyr.world</a></div>"
   );
   marker.bindTooltip(ruins_markers[i].label, {
     // permanent: true,
